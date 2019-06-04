@@ -1,23 +1,23 @@
 import pandas as pd
 import numpy as np
-import seaborn as sns
 import matplotlib.pyplot as plt
 
 
-def plot_dataset(Dataset):
-    print(Dataset.Gain)
-    plt.plot(Dataset["Gain"])
+def plot_dataset(dataset):
+    print(dataset.Gain)
+    plt.plot(dataset["Gain"])
     plt.show()
     # Dataset["Gain"].plot(linewidth=0.5)
 
 
 def make_empty_dataset(min_t, max_t, cols, delta_t):
-    timestamps = pd.interval_range(0,max_t - min_t, freq=delta_t)
+    timestamps = pd.interval_range(0, max_t - min_t, freq=delta_t)
     empty_dataset = pd.DataFrame(index=timestamps, columns=cols)
 
     return empty_dataset
 
-def Create_dataset(df_raw, delta_t):
+
+def create_dataset(df_raw, delta_t):
     min_t = min(df_raw.time)
     max_t = max(df_raw.time)
     cols = df_raw.drop(["time"], axis=1).columns
@@ -26,9 +26,9 @@ def Create_dataset(df_raw, delta_t):
 
     for i in range(0, len(empty_dataset.index)):
         relevant_rows = df_raw[
-            (df_raw["time"] - min_t >= i*delta_t) &
-            (df_raw["time"] - min_t < (i+1)*delta_t)
-        ]
+            (df_raw["time"] - min_t >= i * delta_t) &
+            (df_raw["time"] - min_t < (i + 1) * delta_t)
+            ]
 
         for col in empty_dataset.columns:
             if len(relevant_rows) > 0:
@@ -36,7 +36,8 @@ def Create_dataset(df_raw, delta_t):
             else:
                 raise ValueError("No relevant rows.")
 
-    return  empty_dataset
+    return empty_dataset
+
 
 def preprocess(data):
     df_raw = data.drop(["Unnamed: 18"], axis=1)
@@ -45,8 +46,8 @@ def preprocess(data):
 
     return df_raw
 
-def main():
 
+def main():
     # Variables
     delta_t = 0.25
 
@@ -54,10 +55,10 @@ def main():
 
     df_raw = preprocess(data)
 
+    dataset = create_dataset(df_raw, delta_t)
 
-    Dataset = Create_dataset(df_raw, delta_t)
+    plot_dataset(dataset)
 
-    plot_dataset(Dataset)
 
 if __name__ == '__main__':
     main()
