@@ -6,8 +6,50 @@ import matplotlib.pyplot as plt
 def plot_dataset(dataset):
     plt.plot(dataset.loc[:, ["gFx", "gFy", "gFz"]])
     plt.legend(("gFx", "gFy", "gFz"))
-    plt.show()
+    plt.ylabel("g-force")
+    plt.xlabel("Time (s)")
+    plt.savefig("../output/g_force.png")
+    plt.close()
 
+    plt.plot(dataset.loc[:, ["ax", "ay", "az"]])
+    plt.legend(("ax", "ay", "az"))
+    plt.ylabel("Acceleration (m/s)")
+    plt.xlabel("Time (s)")
+    plt.savefig("../output/lin_acc.png")
+    plt.close()
+
+    plt.plot(dataset.loc[:, ["wx", "wy", "wz"]])
+    plt.legend(("wx", "wy", "wz"))
+    plt.ylabel("Rotation (rad/s)")
+    plt.xlabel("Time (s)")
+    plt.savefig("../output/gyro.png")
+    plt.close()
+
+    plt.plot(dataset.loc[:, "p"])
+    plt.ylabel("Pressure (hPa)")
+    plt.xlabel("Time (s)")
+    plt.savefig("../output/pressure.png")
+    plt.close()
+
+    plt.plot(dataset.loc[:, ["Bx", "By", "Bz"]])
+    plt.legend(("Bx", "By", "Bz"))
+    plt.ylabel("Magnetic force (" + r'$\mu$' + 'T)')
+    plt.xlabel("Time (s)")
+    plt.savefig("../output/magnetic.png")
+    plt.close()
+
+    plt.plot(dataset.loc[:, ["Azimuth", "Pitch", "Roll"]])
+    plt.legend(("Azimuth", "Pitch", "Roll"))
+    plt.ylabel("Inclination (degrees)")
+    plt.xlabel("Time (s)")
+    plt.savefig("../output/inclination.png")
+    plt.close()
+
+    plt.plot(dataset.loc[:, "Gain"])
+    plt.ylabel("Sound intensity (dB)")
+    plt.xlabel("Time (s)")
+    plt.savefig("../output/sound.png")
+    plt.close()
 
 def make_empty_dataset(min_t, max_t, cols, delta_t):
     timestamps = np.arange(0, max_t - min_t, delta_t)
