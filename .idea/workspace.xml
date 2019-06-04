@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd98b4c0-4428-4a5e-94b5-ec675bed6f31" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/output/Thumbs.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/g_force.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/gyro.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/inclination.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/lin_acc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/magnetic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/pressure.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/sound.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/Create_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Create_dataset.py" afterDir="false" />
-    </list>
+    <list default="true" id="bd98b4c0-4428-4a5e-94b5-ec675bed6f31" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +15,7 @@
     <session id="162689708">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -59,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/Create_dataset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="95" column="49" selection-start-line="95" selection-start-column="49" selection-end-line="95" selection-end-column="49" />
+            <state relative-caret-position="290">
+              <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
                 <marker date="1559653946048" expanded="true" signature="1484:1514" ph="..." />
@@ -216,7 +206,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32956153" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32956153" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -237,8 +227,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/scripts/Create_dataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="95" column="49" selection-start-line="95" selection-start-column="49" selection-end-line="95" selection-end-column="49" />
+        <state relative-caret-position="290">
+          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
             <marker date="1559653946048" expanded="true" signature="1484:1514" ph="..." />
