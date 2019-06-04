@@ -4,13 +4,13 @@ import matplotlib.pyplot as plt
 
 
 def plot_dataset(dataset):
-    print(dataset.Gain)
-    plt.plot(dataset["Gain"])
+    plt.plot(dataset.loc[:, ["gFx", "gFy", "gFz"]])
+    plt.legend(("gFx", "gFy", "gFz"))
     plt.show()
 
 
 def make_empty_dataset(min_t, max_t, cols, delta_t):
-    timestamps = np.arange(0,max_t - min_t, delta_t)
+    timestamps = np.arange(0, max_t - min_t, delta_t)
     empty_dataset = pd.DataFrame(index=timestamps, columns=cols)
 
     return empty_dataset
