@@ -3,53 +3,55 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def plot_dataset(dataset):
+def plot_dataset(dataset, folder):
+    print(dataset.p)
     plt.plot(dataset.loc[:, ["gFx", "gFy", "gFz"]])
     plt.legend(("gFx", "gFy", "gFz"))
     plt.ylabel("g-force")
     plt.xlabel("Time (s)")
-    plt.savefig("../output/g_force.png")
+    plt.savefig(folder + "g_force.png")
     plt.close()
 
     plt.plot(dataset.loc[:, ["ax", "ay", "az"]])
     plt.legend(("ax", "ay", "az"))
-    plt.ylabel("Acceleration (m/s)")
+    plt.ylabel("Acceleration (m/s" + r'$^2$' + ")")
     plt.xlabel("Time (s)")
-    plt.savefig("../output/lin_acc.png")
+    plt.savefig(folder + "lin_acc.png")
     plt.close()
 
     plt.plot(dataset.loc[:, ["wx", "wy", "wz"]])
     plt.legend(("wx", "wy", "wz"))
     plt.ylabel("Rotation (rad/s)")
     plt.xlabel("Time (s)")
-    plt.savefig("../output/gyro.png")
+    plt.savefig(folder + "gyro.png")
     plt.close()
 
     plt.plot(dataset.loc[:, "p"])
     plt.ylabel("Pressure (hPa)")
     plt.xlabel("Time (s)")
-    plt.savefig("../output/pressure.png")
+    plt.savefig(folder + "pressure.png")
     plt.close()
 
     plt.plot(dataset.loc[:, ["Bx", "By", "Bz"]])
     plt.legend(("Bx", "By", "Bz"))
     plt.ylabel("Magnetic force (" + r'$\mu$' + 'T)')
     plt.xlabel("Time (s)")
-    plt.savefig("../output/magnetic.png")
+    plt.savefig(folder + "magnetic.png")
     plt.close()
 
     plt.plot(dataset.loc[:, ["Azimuth", "Pitch", "Roll"]])
     plt.legend(("Azimuth", "Pitch", "Roll"))
     plt.ylabel("Inclination (degrees)")
     plt.xlabel("Time (s)")
-    plt.savefig("../output/inclination.png")
+    plt.savefig(folder + "inclination.png")
     plt.close()
 
     plt.plot(dataset.loc[:, "Gain"])
     plt.ylabel("Sound intensity (dB)")
     plt.xlabel("Time (s)")
-    plt.savefig("../output/sound.png")
+    plt.savefig(folder + "sound.png")
     plt.close()
+
 
 def make_empty_dataset(min_t, max_t, cols, delta_t):
     timestamps = np.arange(0, max_t - min_t, delta_t)
@@ -90,15 +92,17 @@ def preprocess(data):
 
 def main():
     # Variables
-    delta_t = 0.25
+    delta_t_list = [0.25, 6]
+    folders = ["../output/250ms_", "../output/6s_"]
 
     data = pd.read_csv("../data/ML4QS_testrun_1")
 
     df_raw = preprocess(data)
 
-    dataset = create_dataset(df_raw, delta_t)
+    for delta_t, folder in zip(delta_t_list, folders):
+        dataset = create_dataset(df_raw, delta_t)
 
-    plot_dataset(dataset)
+        plot_dataset(dataset, folder)
 
 
 if __name__ == '__main__':
