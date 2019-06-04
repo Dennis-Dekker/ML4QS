@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd98b4c0-4428-4a5e-94b5-ec675bed6f31" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Dennis.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/Create_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Create_dataset.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -11,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/ML4QS$Create_dataset.coverage" NAME="Create_dataset Coverage Results" MODIFIED="1559646768269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/ML4QS$Create_dataset.coverage" NAME="Create_dataset Coverage Results" MODIFIED="1559648435717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="162689708">
@@ -34,13 +36,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="8" />
-          <entry key="py" value="1320" />
+          <entry key="py" value="1365" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="8" />
-          <entry key="Python" value="1320" />
+          <entry key="Python" value="1365" />
         </counts>
       </usages-collector>
     </session>
@@ -50,15 +52,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/Create_dataset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-208">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="-34">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
-                <marker date="1559647866069" expanded="true" signature="168:213" ph="..." />
-                <marker date="1559647866069" expanded="true" signature="265:426" ph="..." />
-                <marker date="1559647866069" expanded="true" signature="462:1124" ph="..." />
-                <marker date="1559647866069" expanded="true" signature="1145:1294" ph="..." />
-                <marker date="1559647866069" expanded="true" signature="1341:1499" ph="..." />
+                <marker date="1559648431342" expanded="true" signature="168:171" ph="..." />
+                <marker date="1559648431342" expanded="true" signature="276:370" ph="..." />
+                <marker date="1559648431342" expanded="true" signature="406:1068" ph="..." />
+                <marker date="1559648431342" expanded="true" signature="1089:1238" ph="..." />
+                <marker date="1559648431342" expanded="true" signature="1285:1443" ph="..." />
               </folding>
             </state>
           </provider>
@@ -193,7 +195,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32956153" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32956153" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -214,15 +216,15 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/scripts/Create_dataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-208">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="-34">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <marker date="1559647866069" expanded="true" signature="168:213" ph="..." />
-            <marker date="1559647866069" expanded="true" signature="265:426" ph="..." />
-            <marker date="1559647866069" expanded="true" signature="462:1124" ph="..." />
-            <marker date="1559647866069" expanded="true" signature="1145:1294" ph="..." />
-            <marker date="1559647866069" expanded="true" signature="1341:1499" ph="..." />
+            <marker date="1559648431342" expanded="true" signature="168:171" ph="..." />
+            <marker date="1559648431342" expanded="true" signature="276:370" ph="..." />
+            <marker date="1559648431342" expanded="true" signature="406:1068" ph="..." />
+            <marker date="1559648431342" expanded="true" signature="1089:1238" ph="..." />
+            <marker date="1559648431342" expanded="true" signature="1285:1443" ph="..." />
           </folding>
         </state>
       </provider>
