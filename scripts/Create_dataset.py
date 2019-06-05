@@ -98,8 +98,6 @@ def main():
 
     data = pd.read_csv("../data/first_data")
 
-    print(folders)
-
     df_raw = preprocess(data)
 
     for delta_t, folder in zip(delta_t_list, folders):

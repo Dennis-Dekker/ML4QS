@@ -2,15 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd98b4c0-4428-4a5e-94b5-ec675bed6f31" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/6s_g_force.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/6s_gyro.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/6s_inclination.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/6s_lin_acc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/6s_magnetic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/6s_pressure.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/6s_sound.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/output/Thumbs.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/Create_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Create_dataset.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,7 +52,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/Create_dataset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="681">
+            <state relative-caret-position="307">
               <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -234,7 +225,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/scripts/Create_dataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="681">
+        <state relative-caret-position="307">
           <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
