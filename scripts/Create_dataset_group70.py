@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 
 def plot_dataset(dataset):
     print(dataset.Gain)
-    #plt.plot(dataset["Gain"])
-    #plt.show()
+    # plt.plot(dataset["Gain"])
+    # plt.show()
     # Dataset["Gain"].plot(linewidth=0.5)
 
 
@@ -40,6 +40,7 @@ def create_dataset(df_raw, delta_t, labels):
 
     return empty_dataset
 
+
 def add_labels(dataset, labels, delta_t, min_t, max_t):
     labels_list = np.unique(labels.activity)
     for label in labels_list:
@@ -51,6 +52,7 @@ def add_labels(dataset, labels, delta_t, min_t, max_t):
                 dataset.loc[dataset.index[i], "label_" + labels.activity[j]] = 1
 
     return dataset
+
 
 def preprocess(data):
     df_raw = data.drop(["Unnamed: 18"], axis=1)
