@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 
 
 def plot_dataset(dataset, folder):
-    print(dataset.p)
     plt.plot(dataset.loc[:, ["gFx", "gFy", "gFz"]])
     plt.legend(("gFx", "gFy", "gFz"))
     plt.ylabel("g-force")
@@ -95,7 +94,7 @@ def main():
     delta_t_list = [0.25, 6]
     folders = ["../output/250ms_", "../output/6s_"]
 
-    data = pd.read_csv("../data/ML4QS_testrun_1")
+    data = pd.read_csv("../data/first_data")
 
     df_raw = preprocess(data)
 
