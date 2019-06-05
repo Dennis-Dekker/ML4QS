@@ -92,9 +92,13 @@ def preprocess(data):
 def main():
     # Variables
     delta_t_list = [0.25, 6]
-    folders = ["../output/250ms_", "../output/6s_"]
+    folders = []
+    for i in range(len(delta_t_list)):
+        folders.append("../output/" + str(int(delta_t_list[i]*1000)) + "ms_")
 
     data = pd.read_csv("../data/first_data")
+
+    print(folders)
 
     df_raw = preprocess(data)
 
