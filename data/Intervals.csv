@@ -1,0 +1,7 @@
+time_1	time_2	activity
+0	20	baseline
+20	60	walk
+60	70	jump
+70	75	run
+75	90	walk
+90	120	stand

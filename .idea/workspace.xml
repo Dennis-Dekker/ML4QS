@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd98b4c0-4428-4a5e-94b5-ec675bed6f31" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/output/250ms_g_force.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/250ms_g_force.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/250ms_gyro.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/250ms_gyro.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/250ms_inclination.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/250ms_inclination.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/250ms_lin_acc.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/250ms_lin_acc.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/250ms_magnetic.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/250ms_magnetic.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/250ms_pressure.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/250ms_pressure.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/250ms_sound.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/250ms_sound.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/6s_g_force.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/6s_g_force.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/6s_gyro.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/6s_gyro.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/6s_inclination.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/6s_inclination.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/6s_lin_acc.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/6s_lin_acc.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/6s_magnetic.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/6s_magnetic.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/6s_pressure.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/6s_pressure.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/6s_sound.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/6s_sound.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/output/Thumbs.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/Create_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Create_dataset.py" afterDir="false" />
-    </list>
+    <list default="true" id="bd98b4c0-4428-4a5e-94b5-ec675bed6f31" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
