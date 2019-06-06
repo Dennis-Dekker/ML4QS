@@ -105,15 +105,16 @@ def preprocess(data):
 
 def main():
     # Variables
-    delta_t = 0.25
+    delta_t = [6,0.25]
 
     data = pd.read_csv("../data/first_data")
     labels = pd.read_csv("../data/intervals.csv", sep="\t")
     df_raw = preprocess(data)
 
-    dataset = create_dataset(df_raw, delta_t, labels)
+    for delta in delta_t:
+        dataset = create_dataset(df_raw, delta, labels)
 
-    plot_dataset(dataset, "../output/")
+        plot_dataset(dataset, "../output/" + str(int(delta * 1000)) + "ms_")
 
     dataset.to_csv("../data/processed_data.csv")
 
