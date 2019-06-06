@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd98b4c0-4428-4a5e-94b5-ec675bed6f31" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scripts/outlier_detection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/outlier_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/outlier_detection.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,13 +75,11 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/outlier_detection.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="42" column="47" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
+                <state relative-caret-position="335">
+                  <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
                   <folding>
                     <element signature="e#0#19#0" expanded="true" />
-                    <marker date="1559816611206" expanded="true" signature="113:751" ph="..." />
-                    <marker date="1559816611206" expanded="true" signature="814:835" ph="..." />
-                    <marker date="1559816611206" expanded="true" signature="846:1065" ph="..." />
+                    <marker date="1559816718328" expanded="true" signature="1050:1067" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -143,12 +140,14 @@
       <find>a</find>
       <find>w</find>
       <find>&quot;../output/</find>
+      <find>chauvinet</find>
     </findStrings>
     <replaceStrings>
       <replace>a</replace>
       <replace>w</replace>
       <replace>B</replace>
       <replace>folder + &quot;</replace>
+      <replace>chauvenet</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -457,13 +456,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/outlier_detection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="42" column="47" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
+        <state relative-caret-position="335">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <marker date="1559816611206" expanded="true" signature="113:751" ph="..." />
-            <marker date="1559816611206" expanded="true" signature="814:835" ph="..." />
-            <marker date="1559816611206" expanded="true" signature="846:1065" ph="..." />
+            <marker date="1559816718328" expanded="true" signature="1050:1067" ph="..." />
           </folding>
         </state>
       </provider>

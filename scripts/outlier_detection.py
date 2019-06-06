@@ -4,7 +4,7 @@ import math
 from scipy import special
 
 
-def apply_chauvinet(dataset, col):
+def apply_chauvenet(dataset, col):
     mean = dataset[col].mean()
     std = dataset[col].std()
     N = len(dataset.index)
@@ -26,21 +26,23 @@ def apply_chauvinet(dataset, col):
 
     return dataset
 
+
 def load_data(file_name):
     dataset = pd.read_csv(file_name)
 
     return dataset
 
+
 def main():
     dataset = load_data("../data/processed_data.csv")
 
-    chauvinet_cols = ["Gain"]
+    chauvenet_cols = ["Gain"]
 
-    dataset = apply_chauvinet(dataset, chauvinet_cols)
+    dataset = apply_chauvenet(dataset, chauvenet_cols)
 
     print(dataset)
 
-    dataset.to_csv("../data/data_chauvinet_gain.csv")
+    dataset.to_csv("../data/data_chauvenet_gain.csv")
 
 
 if __name__ == '__main__':
