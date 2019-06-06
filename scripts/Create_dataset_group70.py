@@ -3,12 +3,53 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def plot_dataset(dataset):
-    print(dataset.Gain)
-    # plt.plot(dataset["Gain"])
-    # plt.show()
-    # Dataset["Gain"].plot(linewidth=0.5)
+def plot_dataset(dataset, folder):
+    plt.plot(dataset.loc[:, ["gFx", "gFy", "gFz"]])
+    plt.legend(("gFx", "gFy", "gFz"))
+    plt.ylabel("g-force")
+    plt.xlabel("Time (s)")
+    plt.savefig(folder + "g_force.png")
+    plt.close()
 
+    plt.plot(dataset.loc[:, ["ax", "ay", "az"]])
+    plt.legend(("ax", "ay", "az"))
+    plt.ylabel("Acceleration (m/s" + r'$^2$' + ")")
+    plt.xlabel("Time (s)")
+    plt.savefig(folder + "lin_acc.png")
+    plt.close()
+
+    plt.plot(dataset.loc[:, ["wx", "wy", "wz"]])
+    plt.legend(("wx", "wy", "wz"))
+    plt.ylabel("Rotation (rad/s)")
+    plt.xlabel("Time (s)")
+    plt.savefig(folder + "gyro.png")
+    plt.close()
+
+    plt.plot(dataset.loc[:, "p"])
+    plt.ylabel("Pressure (hPa)")
+    plt.xlabel("Time (s)")
+    plt.savefig(folder + "pressure.png")
+    plt.close()
+
+    plt.plot(dataset.loc[:, ["Bx", "By", "Bz"]])
+    plt.legend(("Bx", "By", "Bz"))
+    plt.ylabel("Magnetic force (" + r'$\mu$' + 'T)')
+    plt.xlabel("Time (s)")
+    plt.savefig(folder + "magnetic.png")
+    plt.close()
+
+    plt.plot(dataset.loc[:, ["Azimuth", "Pitch", "Roll"]])
+    plt.legend(("Azimuth", "Pitch", "Roll"))
+    plt.ylabel("Inclination (degrees)")
+    plt.xlabel("Time (s)")
+    plt.savefig(folder + "inclination.png")
+    plt.close()
+
+    plt.plot(dataset.loc[:, "Gain"])
+    plt.ylabel("Sound intensity (dB)")
+    plt.xlabel("Time (s)")
+    plt.savefig(folder + "sound.png")
+    plt.close()
 
 def make_empty_dataset(min_t, max_t, cols, delta_t):
     timestamps = np.arange(0, max_t - min_t, delta_t)
@@ -64,7 +105,7 @@ def preprocess(data):
 
 def main():
     # Variables
-    delta_t = 0.05
+    delta_t = 0.25
 
     data = pd.read_csv("../data/first_data")
     labels = pd.read_csv("../data/intervals.csv", sep="\t")
@@ -72,7 +113,7 @@ def main():
 
     dataset = create_dataset(df_raw, delta_t, labels)
 
-    print(dataset)
+    plot_dataset(dataset, "../output/")
 
     dataset.to_csv("../data/processed_data.csv")
 
