@@ -1,8 +1,10 @@
 import pandas as pd
 import numpy as np
 import math
-from scipy import spatial, special
 import copy
+
+from scipy import spatial, special
+from sklearn import mixture
 
 
 def reachability_distance(distances, k, i1, i2):
@@ -114,6 +116,34 @@ def simple_distance_based(dataset, cols, d_metric, d_min, f_min):
     return data_table
 
 
+def apply_mixture_model(data_table, col, c):
+    # Fit a mixture model to our data.
+    data = data_table[data_table[col].notnull()][col]
+    g = mixture.GaussianMixture(n_components=3, n_init=1)
+
+    g.fit(data.as_matrix().reshape(-1, 1))
+
+    # Predict the probabilities
+    probs = g.score_samples(data.as_matrix().reshape(-1, 1))
+
+    mask = []
+    p_threshold = 1/(c*len(data_table.index))
+    print(p_threshold)
+    for i in probs:
+        if np.power(10, i) <= p_threshold:
+            mask.append(True)
+        else:
+            mask.append(False)
+
+    # Create the right data frame and concatenate the two.
+    data_mask = pd.DataFrame(mask, index=data_table.index, columns=['Mixture_model'])
+
+    #data_probs = pd.DataFrame(np.power(10, probs), index=data.index, columns=[col[0] + "_mixture"])
+    data_table = pd.concat([data_table, data_mask], axis=1)
+
+    return data_table
+
+
 def apply_chauvenet(dataset, col):
     mean = dataset[col].mean()
     std = dataset[col].std()
@@ -152,6 +182,12 @@ def main():
 
     dataset = apply_chauvenet(dataset, chauvenet_cols)
 
+    # Mixture model
+    mixture_cols = ["Gain"]
+    c = 5
+
+    dataset = apply_mixture_model(dataset, mixture_cols, c)
+
     # Simple distance based
     distance_cols = ["Gain"]
     d_metric = "euclidean"
@@ -161,11 +197,11 @@ def main():
     dataset = simple_distance_based(dataset, distance_cols, d_metric, d_min, f_min)
 
     # local outlier factor
-    local_outlier_factor_cols = ["Gain"]
-    d_metric = "euclidean"
-    k = 10
+    # local_outlier_factor_cols = ["Gain"]
+    # d_metric = "euclidean"
+    # k = 5
 
-    dataset = local_outlier_factor(dataset, local_outlier_factor_cols, d_metric, k)
+    # dataset = local_outlier_factor(dataset, local_outlier_factor_cols, d_metric, k)
 
     # Save dataset
     dataset.to_csv("../data/data_chauvenet_gain.csv")

@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd98b4c0-4428-4a5e-94b5-ec675bed6f31" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data_chauvinet_gain.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_chauvenet_gain.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_chauvenet_gain.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/outlier_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/outlier_detection.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +15,7 @@
     <SUITE FILE_PATH="coverage/ML4QS$crowdsignals_ch3_outliers.coverage" NAME="crowdsignals_ch3_outliers Coverage Results" MODIFIED="1559813915988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PythonCode" />
     <SUITE FILE_PATH="coverage/ML4QS$Create_dataset.coverage" NAME="Create_dataset Coverage Results" MODIFIED="1559738137925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/ML4QS$Create_dataset_group70.coverage" NAME="Create_dataset_group70 Coverage Results" MODIFIED="1559813528341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
-    <SUITE FILE_PATH="coverage/ML4QS$outlier_detection.coverage" NAME="outlier_detection Coverage Results" MODIFIED="1559902544078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/ML4QS$outlier_detection.coverage" NAME="outlier_detection Coverage Results" MODIFIED="1559904888811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -48,26 +47,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="16" />
+          <entry key="py" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="16" />
+          <entry key="Python" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="154" />
           <entry key="dummy" value="8" />
-          <entry key="py" value="4548" />
+          <entry key="py" value="4834" />
           <entry key="txt" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="21" />
-          <entry key="Python" value="4702" />
+          <entry key="Python" value="4988" />
         </counts>
       </usages-collector>
     </session>
@@ -76,19 +75,40 @@
     <splitter split-orientation="horizontal" split-proportion="0.4706343">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scripts/outlier_detection.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="377">
-                  <caret line="165" column="10" selection-start-line="165" selection-start-column="10" selection-end-line="165" selection-end-column="10" />
+                <state relative-caret-position="309">
+                  <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
                   <folding>
                     <element signature="e#0#19#0" expanded="true" />
-                    <marker date="1559902544078" expanded="true" signature="378:381" ph="..." />
-                    <marker date="1559902544078" expanded="true" signature="3193:3386" ph="..." />
-                    <marker date="1559902544078" expanded="true" signature="3193:3766" ph="..." />
-                    <marker date="1559902544078" expanded="true" signature="3429:3434" ph="..." />
-                    <marker date="1559902544078" expanded="true" signature="3803:4001" ph="..." />
-                    <marker date="1559902544078" expanded="true" signature="4066:4860" ph="..." />
+                    <marker date="1559904884769" expanded="true" signature="407:410" ph="..." />
+                    <marker date="1559904884769" expanded="true" signature="3222:3415" ph="..." />
+                    <marker date="1559904884769" expanded="true" signature="3222:3795" ph="..." />
+                    <marker date="1559904884769" expanded="true" signature="3458:3463" ph="..." />
+                    <marker date="1559904884769" expanded="true" signature="3832:4030" ph="..." />
+                    <marker date="1559904884769" expanded="true" signature="4095:5778" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/scripts/Create_dataset.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-748">
+                  <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/scripts/outlier_detection_Martin.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="187">
+                  <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+                  <folding>
+                    <element signature="e#0#12#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -101,8 +121,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/PythonCode/Chapter3/OutlierDetection.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="377">
-                  <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
+                <state relative-caret-position="394">
+                  <caret line="52" column="21" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="21" />
                   <folding>
                     <element signature="e#505#517#0" expanded="true" />
                   </folding>
@@ -125,7 +145,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch3_outliers.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="246">
+                <state relative-caret-position="459">
                   <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
                 </state>
               </provider>
@@ -168,8 +188,8 @@
         <option value="$PROJECT_DIR$/scripts/Create_dataset.py" />
         <option value="$PROJECT_DIR$/scripts/Create_dataset_group70.py" />
         <option value="$USER_HOME$/.local/lib/python3.6/site-packages/sklearn/metrics/cluster/supervised.py" />
-        <option value="$PROJECT_DIR$/scripts/outlier_detection_Martin.py" />
         <option value="$PROJECT_DIR$/PythonCode/Chapter3/OutlierDetection.py" />
+        <option value="$PROJECT_DIR$/scripts/outlier_detection_Martin.py" />
         <option value="$PROJECT_DIR$/scripts/outlier_detection.py" />
       </list>
     </option>
@@ -220,6 +240,11 @@
               <item name="ML4QS" type="b2602c69:ProjectViewProjectNode" />
               <item name="ML4QS" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ML4QS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ML4QS" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -384,13 +409,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14524765" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14524765" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49933067" visible="true" weight="0.26863572" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49933067" visible="true" weight="0.26863572" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -456,13 +482,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="update script" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/Create_dataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1160">
-          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/Create_dataset_group70.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
@@ -471,6 +490,16 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/sklearn/model_selection/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/PythonCode/Chapter3/OutlierDetection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="52" column="21" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="21" />
+          <folding>
+            <element signature="e#505#517#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/util/util.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -481,36 +510,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonCode/Chapter3/OutlierDetection.py">
+    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch3_outliers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
-          <folding>
-            <element signature="e#505#517#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="459">
+          <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch3_outliers.py">
+    <entry file="file://$PROJECT_DIR$/scripts/outlier_detection_Martin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
+        <state relative-caret-position="187">
+          <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/outlier_detection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="165" column="10" selection-start-line="165" selection-start-column="10" selection-end-line="165" selection-end-column="10" />
+        <state relative-caret-position="309">
+          <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <marker date="1559902544078" expanded="true" signature="378:381" ph="..." />
-            <marker date="1559902544078" expanded="true" signature="3193:3386" ph="..." />
-            <marker date="1559902544078" expanded="true" signature="3193:3766" ph="..." />
-            <marker date="1559902544078" expanded="true" signature="3429:3434" ph="..." />
-            <marker date="1559902544078" expanded="true" signature="3803:4001" ph="..." />
-            <marker date="1559902544078" expanded="true" signature="4066:4860" ph="..." />
+            <marker date="1559904884769" expanded="true" signature="407:410" ph="..." />
+            <marker date="1559904884769" expanded="true" signature="3222:3415" ph="..." />
+            <marker date="1559904884769" expanded="true" signature="3222:3795" ph="..." />
+            <marker date="1559904884769" expanded="true" signature="3458:3463" ph="..." />
+            <marker date="1559904884769" expanded="true" signature="3832:4030" ph="..." />
+            <marker date="1559904884769" expanded="true" signature="4095:5778" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/Create_dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-748">
+          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
         </state>
       </provider>
     </entry>
