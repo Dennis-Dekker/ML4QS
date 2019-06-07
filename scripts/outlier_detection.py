@@ -5,6 +5,72 @@ from scipy import spatial, special
 import copy
 
 
+def reachability_distance(distances, k, i1, i2):
+    # Compute the k-distance of i2.
+    k_distance_value, neighbors = k_distance(distances, i2, k)
+    # The value is the max of the k-distance of i2 and the real distance.
+    return max([k_distance_value, distances.ix[i1, i2]])
+
+
+def local_reachability_density(distances, i, k, k_distance_i, neighbors_i):
+    # Set distances to neighbors to 0.
+    reachability_distances_array = [0] * len(neighbors_i)
+
+    # Compute the reachability distance between i and all neighbors.
+    for i, neighbor in enumerate(neighbors_i):
+        reachability_distances_array[i] = reachability_distance(distances, k, i, neighbor)
+    if not any(reachability_distances_array):
+        return float("inf")
+    else:
+        # Return the number of neighbors divided by the sum of the reachability distances.
+        return len(neighbors_i) / sum(reachability_distances_array)
+
+
+def k_distance(distances, i, k):
+    # Simply look up the values in the distance table, select the min_pts^th lowest value and take the value pairs
+    # Take min_pts + 1 as we also have the instance itself in there.
+    neighbors = np.argpartition(np.array(distances.ix[i, :]), k + 1)[0:(k + 1)].tolist()
+    if i in neighbors:
+        neighbors.remove(i)
+    return max(distances.ix[i, neighbors]), neighbors
+
+
+def local_outlier_factor_instance(distances, i, k):
+    # Compute the k-distance for i.
+    k_distance_value, neighbors = k_distance(distances, i, k)
+    # Computer the local reachability given the found k-distance and neighbors.
+    instance_lrd = local_reachability_density(distances, i, k, k_distance_value, neighbors)
+    lrd_ratios_array = [0] * len(neighbors)
+
+    # Computer the k-distances and local reachability density of the neighbors
+    for i, neighbor in enumerate(neighbors):
+        k_distance_value_neighbor, neighbors_neighbor = k_distance(distances, neighbor, k)
+        neighbor_lrd = local_reachability_density(distances, neighbor, k, k_distance_value_neighbor, neighbors_neighbor)
+        # Store the ratio between the neighbor and the row i.
+        lrd_ratios_array[i] = neighbor_lrd / instance_lrd
+
+    # Return the average ratio.
+    return sum(lrd_ratios_array) / len(neighbors)
+
+
+def local_outlier_factor(dataset, cols, d_function, k):
+    # Inspired on https://github.com/damjankuznar/pylof/blob/master/lof.py
+    # but tailored towards the distance metrics and data structures used here.
+
+    # Normalize the dataset first.
+    new_dataset = normalize_dataset(dataset.dropna(axis=0, subset=cols), cols)
+    # Create the distance table first between all instances:
+    distances = distance_table(new_dataset, cols, d_function)
+
+    outlier_factor = []
+    # Compute the outlier score per row.
+    for i in range(0, len(new_dataset.index)):
+        outlier_factor.append(local_outlier_factor_instance(distances, i, k))
+    data_outlier_probs = pd.DataFrame(outlier_factor, index=new_dataset.index, columns=['lof'])
+    dataset = pd.concat([dataset, data_outlier_probs], axis=1)
+    return dataset
+
+
 def distance_table(dataset, cols, d_function):
     dataset = pd.DataFrame(spatial.distance.squareform(distance(dataset.ix[:, cols], d_function)),
                            columns=dataset.index, index=dataset.index)
@@ -87,12 +153,19 @@ def main():
     dataset = apply_chauvenet(dataset, chauvenet_cols)
 
     # Simple distance based
-    distance_cols = ["gFx", "gFy", "gFz"]
+    distance_cols = ["Gain"]
     d_metric = "euclidean"
     d_min = 0.10
     f_min = 0.99
 
     dataset = simple_distance_based(dataset, distance_cols, d_metric, d_min, f_min)
+
+    # local outlier factor
+    local_outlier_factor_cols = ["Gain"]
+    d_metric = "euclidean"
+    k = 10
+
+    dataset = local_outlier_factor(dataset, local_outlier_factor_cols, d_metric, k)
 
     # Save dataset
     dataset.to_csv("../data/data_chauvenet_gain.csv")
