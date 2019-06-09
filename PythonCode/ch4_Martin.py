@@ -66,10 +66,11 @@ def main():
     sampling_rate = int(float(0.5*60000)/milliseconds_per_instance)
     cols = ["gFx"]
     for i in window_size:
-        
+        print("window size "+ str(i))
+
         data_freq = abstract_frequency(dataset, cols,i , sampling_rate)
 
-        print(data_freq)
+        #print(data_freq)
 
     dataset.to_csv('../data/frequency_ch4_Martin.csv')
 
