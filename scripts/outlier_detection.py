@@ -128,7 +128,6 @@ def apply_mixture_model(data_table, col, c):
 
     mask = []
     p_threshold = 1/(c*len(data_table.index))
-    print(p_threshold)
     for i in probs:
         if np.power(10, i) <= p_threshold:
             mask.append(True)
@@ -159,10 +158,13 @@ def apply_chauvenet(dataset, col):
 
     for i in range(0, len(dataset.index)):
         # Determine the probability of observing the point
-        prob.append(1.0 - 0.5 * (special.erf(high.iloc[i]) - special.erf(low.iloc[i])))
+        prob.append(float(1.0 - 0.5 * (special.erf(high.iloc[i]) - special.erf(low.iloc[i]))))
         # And mark as an outlier when the probability is below our criterion.
-        mask.append(prob[i] < criterion)
-    dataset[col[0] + '_outlier'] = mask
+        if prob[i] <= criterion:
+            mask.append(True)
+        else:
+            mask.append(False)
+    dataset["Chauvenet"] = mask
 
     return dataset
 
@@ -177,19 +179,21 @@ def main():
     # Load data
     dataset = load_data("../data/processed_data.csv")
 
+    outlier_col = ["p"]
+
     # Chauvenet
-    chauvenet_cols = ["Gain"]
+    chauvenet_cols = outlier_col
 
     dataset = apply_chauvenet(dataset, chauvenet_cols)
 
     # Mixture model
-    mixture_cols = ["Gain"]
+    mixture_cols = outlier_col
     c = 5
 
     dataset = apply_mixture_model(dataset, mixture_cols, c)
 
     # Simple distance based
-    distance_cols = ["Gain"]
+    distance_cols = outlier_col
     d_metric = "euclidean"
     d_min = 0.10
     f_min = 0.99
@@ -197,11 +201,11 @@ def main():
     dataset = simple_distance_based(dataset, distance_cols, d_metric, d_min, f_min)
 
     # local outlier factor
-    # local_outlier_factor_cols = ["Gain"]
-    # d_metric = "euclidean"
-    # k = 5
+    local_outlier_factor_cols = outlier_col
+    d_metric = "euclidean"
+    k = 10
 
-    # dataset = local_outlier_factor(dataset, local_outlier_factor_cols, d_metric, k)
+    dataset = local_outlier_factor(dataset, local_outlier_factor_cols, d_metric, k)
 
     # Save dataset
     dataset.to_csv("../data/data_chauvenet_gain.csv")
