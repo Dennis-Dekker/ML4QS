@@ -62,17 +62,18 @@ def main():
     dataset = load_data("../data/processed_data.csv")
     
     milliseconds_per_instance = (dataset.index[1] - dataset.index[0])
+    
+    # Set the window sizes to the number of instances representing 5 seconds, 30 seconds and 5 minutes
     window_size = [int(float(5000)/milliseconds_per_instance), int(float(0.5*60000)/milliseconds_per_instance), int(float(5*60000)/milliseconds_per_instance)]
-    sampling_rate = int(float(0.5*60000)/milliseconds_per_instance)
+    sampling_rate = float(1000)/milliseconds_per_instance
     cols = ["gFx"]
     for i in window_size:
         print("window size "+ str(i))
-
         data_freq = abstract_frequency(dataset, cols,i , sampling_rate)
 
         #print(data_freq)
 
-    dataset.to_csv('../data/frequency_ch4_Martin.csv')
+        dataset.to_csv('../data/frequency_ch4_Martin.csv')
 
 
 if __name__ == '__main__':
