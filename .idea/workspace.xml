@@ -2,16 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd98b4c0-4428-4a5e-94b5-ec675bed6f31" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/PythonCode/clustering_ch5_owndata.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Figures/figure_1-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Figures/figure_1-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Figures/figure_1-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Figures/figure_1-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Figures/figure_1-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Figures/figure_1-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Figures/figure_1-7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Figures/figure_1-8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Figures/figure_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figures/gyr_phone/figure_1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figures/gyr_phone/figure_1-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figures/gyr_phone/figure_1-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figures/gyr_phone/figure_1-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figures/gyr_phone/figure_1-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figures/gyr_phone/figure_1-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figures/gyr_phone/figure_1-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figures/gyr_phone/figure_1-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figures/gyr_phone/figure_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonCode/intermediate_datafiles/.~lock.chapter4_result.csv#" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/first_data" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,34 +46,26 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.60739326">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch5.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="310">
-                  <caret line="95" column="50" selection-start-line="95" selection-start-column="41" selection-end-line="95" selection-end-column="50" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/PythonCode/cluster_ch5_coding1.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="462">
-                  <caret line="48" column="19" selection-start-line="49" selection-start-column="84" selection-end-line="49" selection-end-column="93" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch5.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="86" column="6" selection-end-line="127" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PythonCode/clustering_ch5_owndata.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="346">
+              <caret line="30" column="71" selection-start-line="30" selection-start-column="71" selection-end-line="30" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -118,6 +113,7 @@
         <option value="$PROJECT_DIR$/PythonCode/test.ipynb" />
         <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch5.py" />
         <option value="$PROJECT_DIR$/PythonCode/cluster_ch5_coding1.py" />
+        <option value="$PROJECT_DIR$/PythonCode/clustering_ch5_owndata.py" />
       </list>
     </option>
   </component>
@@ -219,7 +215,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.crowdsignals_ch5">
+  <component name="RunManager" selected="Python.clustering_ch5_owndata">
     <configuration name="cluster_ch5_coding1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ML4QS" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -241,20 +237,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="crowdsignals_ch3_outliers" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="clustering_ch5_owndata" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ML4QS" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\Dennis\.conda\envs\ML4QS\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PythonCode" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonCode/crowdsignals_ch2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonCode/clustering_ch5_owndata.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -328,18 +323,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.crowdsignals_ch3_rest" />
-      <item itemvalue="Python.crowdsignals_ch3_outliers" />
       <item itemvalue="Python.crowdsignals_ch4" />
       <item itemvalue="Python.crowdsignals_ch5" />
       <item itemvalue="Python.cluster_ch5_coding1" />
+      <item itemvalue="Python.clustering_ch5_owndata" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.clustering_ch5_owndata" />
         <item itemvalue="Python.crowdsignals_ch5" />
         <item itemvalue="Python.cluster_ch5_coding1" />
         <item itemvalue="Python.crowdsignals_ch4" />
         <item itemvalue="Python.crowdsignals_ch3_rest" />
-        <item itemvalue="Python.crowdsignals_ch3_outliers" />
       </list>
     </recent_temporary>
   </component>
@@ -381,7 +376,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49933067" visible="true" weight="0.2682672" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49933067" weight="0.2682672" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39770356" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -617,15 +612,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/cluster_ch5_coding1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
+        <state relative-caret-position="660">
           <caret line="48" column="19" selection-start-line="49" selection-start-column="84" selection-end-line="49" selection-end-column="93" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch5.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="95" column="50" selection-start-line="95" selection-start-column="41" selection-end-line="95" selection-end-column="50" />
+        <state relative-caret-position="112">
+          <caret line="86" column="6" selection-end-line="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/clustering_ch5_owndata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="30" column="71" selection-start-line="30" selection-start-column="71" selection-end-line="30" selection-end-column="71" />
         </state>
       </provider>
     </entry>
