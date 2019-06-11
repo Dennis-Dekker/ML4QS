@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd98b4c0-4428-4a5e-94b5-ec675bed6f31" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ML4QS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ML4QS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonCode/crowdsignals_ch2.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/crowdsignals_ch2.py" afterDir="false" />
-    </list>
+    <list default="true" id="bd98b4c0-4428-4a5e-94b5-ec675bed6f31" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
