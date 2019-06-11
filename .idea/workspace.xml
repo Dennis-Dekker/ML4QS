@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd98b4c0-4428-4a5e-94b5-ec675bed6f31" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/PythonCode/cluster_ch5_coding1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figures/figure_1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figures/figure_1-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figures/figure_1-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figures/figure_1-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figures/figure_1-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figures/figure_1-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figures/figure_1-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figures/figure_1-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figures/figure_1.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,14 +43,14 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.35500318">
+    <splitter split-orientation="horizontal" split-proportion="0.60739326">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch5.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="332">
-                  <caret line="126" column="24" selection-start-line="126" selection-end-line="127" />
+                <state relative-caret-position="310">
+                  <caret line="95" column="50" selection-start-line="95" selection-start-column="41" selection-end-line="95" selection-end-column="50" />
                 </state>
               </provider>
             </entry>
@@ -54,8 +62,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/PythonCode/cluster_ch5_coding1.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="24" selection-start-line="24" selection-end-line="24" />
+                <state relative-caret-position="462">
+                  <caret line="48" column="19" selection-start-line="49" selection-start-column="84" selection-end-line="49" selection-end-column="93" />
                 </state>
               </provider>
             </entry>
@@ -211,7 +219,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.cluster_ch5_coding1">
+  <component name="RunManager" selected="Python.crowdsignals_ch5">
     <configuration name="cluster_ch5_coding1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ML4QS" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -327,8 +335,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.cluster_ch5_coding1" />
         <item itemvalue="Python.crowdsignals_ch5" />
+        <item itemvalue="Python.cluster_ch5_coding1" />
         <item itemvalue="Python.crowdsignals_ch4" />
         <item itemvalue="Python.crowdsignals_ch3_rest" />
         <item itemvalue="Python.crowdsignals_ch3_outliers" />
@@ -367,15 +375,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13933077" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49933067" weight="0.2682672" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39770356" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49933067" visible="true" weight="0.2682672" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39770356" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32911393" />
@@ -608,17 +615,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch5.py">
+    <entry file="file://$PROJECT_DIR$/PythonCode/cluster_ch5_coding1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="126" column="24" selection-start-line="126" selection-end-line="127" />
+        <state relative-caret-position="462">
+          <caret line="48" column="19" selection-start-line="49" selection-start-column="84" selection-end-line="49" selection-end-column="93" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonCode/cluster_ch5_coding1.py">
+    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch5.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="310">
+          <caret line="95" column="50" selection-start-line="95" selection-start-column="41" selection-end-line="95" selection-end-column="50" />
         </state>
       </provider>
     </entry>
