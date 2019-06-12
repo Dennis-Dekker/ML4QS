@@ -63,9 +63,11 @@ plot.show()
 highest_score = 0
 k = 0
 
-for i, j in zip(k_values, silhouette_values):
+for i, j in zip(k_values, silhouette_score):
     if j > highest_score:
         k = i
+
+print "k: \t" + str(k)
 
 dataset_knn = clusteringNH.k_means_over_instances(copy.deepcopy(dataset), ['gFx', 'gFy', 'gFz'], k, 'default', 50, 50)
 DataViz.plot_clusters_3d(dataset_knn, ['gFx', 'gFy', 'gFz'], 'cluster', ['label'])
@@ -98,7 +100,7 @@ plot.show()
 highest_score = 0
 k = 0
 
-for i, j in zip(k_values, silhouette_values):
+for i, j in zip(k_values, silhouette_score):
     if j > highest_score:
         k = i
 dataset_kmed = clusteringNH.k_medoids_over_instances(copy.deepcopy(dataset), ['gFx', 'gFy', 'gFz'], k, 'default', 20,
