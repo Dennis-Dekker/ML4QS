@@ -26,7 +26,7 @@ DataViz = VisualizeDataset()
 dataset_path = './intermediate_datafiles/'
 
 try:
-    dataset = pd.read_csv(dataset_path + 'owndata.csv', index_col=0)
+    dataset = pd.read_csv(dataset_path + 'processed_data.csv', index_col=0)
 except IOError as e:
     print('File not found, try to run previous crowdsignals scripts first!')
     raise e
