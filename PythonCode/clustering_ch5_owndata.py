@@ -46,7 +46,8 @@ silhouette_values = []
 print '===== kmeans clustering ====='
 for k in k_values:
     print 'k = ', k
-    dataset_cluster = clusteringNH.k_means_over_instances(copy.deepcopy(dataset), ['gFx','gFy','gFz'], k, 'default', 20, 10)
+    dataset_cluster = clusteringNH.k_means_over_instances(copy.deepcopy(dataset), ['gFx', 'gFy', 'gFz'], k, 'default',
+                                                          20, 10)
     silhouette_score = dataset_cluster['silhouette'].mean()
     print 'silhouette = ', silhouette_score
     silhouette_values.append(silhouette_score)
@@ -54,19 +55,18 @@ for k in k_values:
 plot.plot(k_values, silhouette_values, 'b-')
 plot.xlabel('k')
 plot.ylabel('silhouette score')
-plot.ylim([0,1])
+plot.ylim([0, 1])
 plot.show()
 
 # And run the knn with the highest silhouette score
 
 k = 6
 
-dataset_knn = clusteringNH.k_means_over_instances(copy.deepcopy(dataset), ['gFx','gFy','gFz'], k, 'default', 50, 50)
-DataViz.plot_clusters_3d(dataset_knn, ['gFx','gFy','gFz'], 'cluster', ['label'])
+dataset_knn = clusteringNH.k_means_over_instances(copy.deepcopy(dataset), ['gFx', 'gFy', 'gFz'], k, 'default', 50, 50)
+DataViz.plot_clusters_3d(dataset_knn, ['gFx', 'gFy', 'gFz'], 'cluster', ['label'])
 DataViz.plot_silhouette(dataset_knn, 'cluster', 'silhouette')
-util.print_latex_statistics_clusters(dataset_knn, 'cluster', ['gFx','gFy','gFz'], 'label')
+util.print_latex_statistics_clusters(dataset_knn, 'cluster', ['gFx', 'gFy', 'gFz'], 'label')
 del dataset_knn['silhouette']
-
 
 k_values = range(2, 10)
 silhouette_values = []
@@ -76,13 +76,14 @@ silhouette_values = []
 print '===== k medoids clustering ====='
 for k in k_values:
     print 'k = ', k
-    dataset_cluster = clusteringNH.k_medoids_over_instances(copy.deepcopy(dataset), ['gFx','gFy','gFz'], k, 'default', 20, n_inits=10)
+    dataset_cluster = clusteringNH.k_medoids_over_instances(copy.deepcopy(dataset), ['gFx', 'gFy', 'gFz'], k, 'default',
+                                                            20, n_inits=10)
     silhouette_score = dataset_cluster['silhouette'].mean()
     print 'silhouette = ', silhouette_score
     silhouette_values.append(silhouette_score)
 
 plot.plot(k_values, silhouette_values, 'b-')
-plot.ylim([0,1])
+plot.ylim([0, 1])
 plot.xlabel('k')
 plot.ylabel('silhouette score')
 plot.show()
@@ -91,10 +92,11 @@ plot.show()
 
 k = 6
 
-dataset_kmed = clusteringNH.k_medoids_over_instances(copy.deepcopy(dataset), ['gFx','gFy','gFz'], k, 'default', 20, n_inits=50)
-DataViz.plot_clusters_3d(dataset_kmed, ['gFx','gFy','gFz'], 'cluster', ['label'])
+dataset_kmed = clusteringNH.k_medoids_over_instances(copy.deepcopy(dataset), ['gFx', 'gFy', 'gFz'], k, 'default', 20,
+                                                     n_inits=50)
+DataViz.plot_clusters_3d(dataset_kmed, ['gFx', 'gFy', 'gFz'], 'cluster', ['label'])
 DataViz.plot_silhouette(dataset_kmed, 'cluster', 'silhouette')
-util.print_latex_statistics_clusters(dataset_kmed, 'cluster', ['gFx','gFy','gFz'], 'label')
+util.print_latex_statistics_clusters(dataset_kmed, 'cluster', ['gFx', 'gFy', 'gFz'], 'label')
 
 # And the hierarchical clustering is the last one we try
 
@@ -108,7 +110,9 @@ silhouette_values = []
 print '===== agglomaritive clustering ====='
 for k in k_values:
     print 'k = ', k
-    dataset_cluster, l = clusteringH.agglomerative_over_instances(copy.deepcopy(dataset), ['gFx','gFy','gFz'], k, 'euclidean', use_prev_linkage=True, link_function='ward')
+    dataset_cluster, l = clusteringH.agglomerative_over_instances(copy.deepcopy(dataset), ['gFx', 'gFy', 'gFz'], k,
+                                                                  'euclidean', use_prev_linkage=True,
+                                                                  link_function='ward')
     silhouette_score = dataset_cluster['silhouette'].mean()
     print 'silhouette = ', silhouette_score
     silhouette_values.append(silhouette_score)
@@ -116,7 +120,7 @@ for k in k_values:
         DataViz.plot_dendrogram(dataset_cluster, l)
 
 plot.plot(k_values, silhouette_values, 'b-')
-plot.ylim([0,1])
+plot.ylim([0, 1])
 plot.xlabel('max number of clusters')
 plot.ylabel('silhouette score')
 plot.show()
