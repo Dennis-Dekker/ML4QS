@@ -32,6 +32,8 @@ except IOError as e:
     raise e
 dataset.index = dataset.index.to_datetime()
 
+selected_columns = ['gFx', 'gFy', 'gFz', 'ax', 'ay', 'az', 'Gain']
+
 # First let us use non hierarchical clustering.
 
 clusteringNH = NonHierarchicalClustering()
@@ -46,7 +48,7 @@ silhouette_values = []
 print '===== kmeans clustering ====='
 for k in k_values:
     print 'k = ', k
-    dataset_cluster = clusteringNH.k_means_over_instances(copy.deepcopy(dataset), ['gFx', 'gFy', 'gFz'], k, 'default',
+    dataset_cluster = clusteringNH.k_means_over_instances(copy.deepcopy(dataset), selected_columns, k, 'default',
                                                           20, 10)
     silhouette_score = dataset_cluster['silhouette'].mean()
     print 'silhouette = ', silhouette_score
@@ -63,16 +65,17 @@ plot.show()
 highest_score = 0
 k = 0
 
-for i, j in zip(k_values, silhouette_score):
+for i, j in zip(k_values, silhouette_values):
     if j > highest_score:
         k = i
+        highest_score = j
 
 print "k: \t" + str(k)
 
-dataset_knn = clusteringNH.k_means_over_instances(copy.deepcopy(dataset), ['gFx', 'gFy', 'gFz'], k, 'default', 50, 50)
-DataViz.plot_clusters_3d(dataset_knn, ['gFx', 'gFy', 'gFz'], 'cluster', ['label'])
+dataset_knn = clusteringNH.k_means_over_instances(copy.deepcopy(dataset), selected_columns, k, 'default', 50, 50)
+DataViz.plot_clusters_3d(dataset_knn, selected_columns, 'cluster', ['label'])
 DataViz.plot_silhouette(dataset_knn, 'cluster', 'silhouette')
-util.print_latex_statistics_clusters(dataset_knn, 'cluster', ['gFx', 'gFy', 'gFz'], 'label')
+util.print_latex_statistics_clusters(dataset_knn, 'cluster', selected_columns, 'label')
 del dataset_knn['silhouette']
 
 k_values = range(2, 10)
@@ -83,7 +86,7 @@ silhouette_values = []
 print '===== k medoids clustering ====='
 for k in k_values:
     print 'k = ', k
-    dataset_cluster = clusteringNH.k_medoids_over_instances(copy.deepcopy(dataset), ['gFx', 'gFy', 'gFz'], k, 'default',
+    dataset_cluster = clusteringNH.k_medoids_over_instances(copy.deepcopy(dataset), selected_columns, k, 'default',
                                                             20, n_inits=10)
     silhouette_score = dataset_cluster['silhouette'].mean()
     print 'silhouette = ', silhouette_score
@@ -100,14 +103,15 @@ plot.show()
 highest_score = 0
 k = 0
 
-for i, j in zip(k_values, silhouette_score):
+for i, j in zip(k_values, silhouette_values):
     if j > highest_score:
         k = i
-dataset_kmed = clusteringNH.k_medoids_over_instances(copy.deepcopy(dataset), ['gFx', 'gFy', 'gFz'], k, 'default', 20,
+        highest_score = j
+dataset_kmed = clusteringNH.k_medoids_over_instances(copy.deepcopy(dataset), selected_columns, k, 'default', 20,
                                                      n_inits=50)
-DataViz.plot_clusters_3d(dataset_kmed, ['gFx', 'gFy', 'gFz'], 'cluster', ['label'])
+DataViz.plot_clusters_3d(dataset_kmed, selected_columns, 'cluster', ['label'])
 DataViz.plot_silhouette(dataset_kmed, 'cluster', 'silhouette')
-util.print_latex_statistics_clusters(dataset_kmed, 'cluster', ['gFx', 'gFy', 'gFz'], 'label')
+util.print_latex_statistics_clusters(dataset_kmed, 'cluster', selected_columns, 'label')
 
 # And the hierarchical clustering is the last one we try
 
@@ -121,7 +125,7 @@ silhouette_values = []
 print '===== agglomaritive clustering ====='
 for k in k_values:
     print 'k = ', k
-    dataset_cluster, l = clusteringH.agglomerative_over_instances(copy.deepcopy(dataset), ['gFx', 'gFy', 'gFz'], k,
+    dataset_cluster, l = clusteringH.agglomerative_over_instances(copy.deepcopy(dataset), selected_columns, k,
                                                                   'euclidean', use_prev_linkage=True,
                                                                   link_function='ward')
     silhouette_score = dataset_cluster['silhouette'].mean()
