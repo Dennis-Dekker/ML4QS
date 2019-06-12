@@ -74,8 +74,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch5.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="1401">
               <caret line="126" column="11" selection-start-line="126" selection-end-line="126" selection-end-column="11" />
+=======
+            <state relative-caret-position="1694">
+              <caret line="86" column="6" selection-end-line="127" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -83,6 +88,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PythonCode/clustering_ch5_owndata.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="-268">
               <caret line="89" column="37" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="37" />
             </state>
@@ -97,6 +103,10 @@
           <provider selected="true" editor-type-id="csv-text-editor">
             <state relative-caret-position="255">
               <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+=======
+            <state relative-caret-position="-1562">
+              <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -187,7 +197,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -227,6 +236,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -418,12 +428,20 @@
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
     <editor active="true" />
     <layout>
+<<<<<<< Updated upstream
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14390896" />
+=======
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27153045" />
+>>>>>>> Stashed changes
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
+<<<<<<< Updated upstream
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49933067" visible="true" weight="0.26722926" />
+=======
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49933067" visible="true" weight="0.2682672" />
+>>>>>>> Stashed changes
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39770356" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -613,6 +631,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-578">
           <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+<<<<<<< Updated upstream
+=======
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
@@ -640,6 +664,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch5.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="1401">
           <caret line="126" column="11" selection-start-line="126" selection-end-line="126" selection-end-column="11" />
         </state>
@@ -683,13 +708,22 @@
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+=======
+        <state relative-caret-position="1694">
+          <caret line="86" column="6" selection-end-line="127" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/clustering_ch5_owndata.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="-268">
           <caret line="89" column="37" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="37" />
+=======
+        <state relative-caret-position="-1562">
+          <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
