@@ -28,13 +28,14 @@ class FourierTransformation:
 
         # Create new columns for the frequency data.
         freqs = np.fft.rfftfreq(int(window_size)) *sampling_rate
+        print(freqs)
 
         for col in cols:
             data_table[col + '_max_freq'] = np.nan
             data_table[col + '_freq_weighted'] = np.nan
             data_table[col + '_pse'] = np.nan
             for freq in freqs:
-                data_table[col + '_freq_' + str(freq) + '_Hz_ws_' + str(window_size)] = np.nan
+                data_table[col + '_freq_' + str(round(freq,1)) + '_Hz_ws_' + str(window_size)] = np.nan
 
         # Pass over the dataset (we cannot compute it when we do not have enough history)
         # and compute the values.

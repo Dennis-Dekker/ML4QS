@@ -78,16 +78,16 @@ features_after_chapter_5 = list(set().union(basic_features, pca_features, time_f
 
 # First, let us consider the performance over a selection of features:
 
-fs = FeatureSelectionClassification()
+# fs = FeatureSelectionClassification()
 
-features, ordered_features, ordered_scores = fs.forward_selection(50, train_X[features_after_chapter_5], train_y)
-print ordered_scores
-print ordered_features
-
-plot.plot(range(1, 51), ordered_scores)
-plot.xlabel('number of features')
-plot.ylabel('accuracy')
-plot.show()
+# features, ordered_features, ordered_scores = fs.forward_selection(50, train_X[features_after_chapter_5], train_y)
+# print ordered_scores
+# print ordered_features
+#
+# plot.plot(range(1, 51), ordered_scores)
+# plot.xlabel('number of features')
+# plot.ylabel('accuracy')
+# plot.show()
 
 # Based on the plot we select the top 10 features.
 
@@ -131,7 +131,7 @@ plot.ylim([0.95, 1.01])
 plot.legend(['training', 'test'], loc=4)
 plot.hold(False)
 
-plot.show()
+plot.savefig("../Figures/Chapter_7/Accuracy_vs_regularization_parameter.png")
 
 # Second, let us consider the influence of certain parameter settings (very related to the regulariztion) and study the impact on performance.
 
@@ -153,7 +153,7 @@ plot.ylabel('accuracy')
 plot.legend(['training', 'test'], loc=1)
 plot.hold(False)
 
-plot.show()
+plot.savefig("../Figures/Chapter_7/Accuracy_vs_minimum_number_point_per_leaf.png")
 
 
 # So yes, it is important :) Therefore we perform grid searches over the most important parameters, and do so by means
