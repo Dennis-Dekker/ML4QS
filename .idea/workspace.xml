@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e8d39fd-e189-4427-b4cf-d2fd77f19dce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/PythonCode/crowdsignals_ch7_classification_all_classes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PythonCode/Chapter7/PrepareDatasetForLearning.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/Chapter7/PrepareDatasetForLearning.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,14 +28,14 @@
     <session id="162689708">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="csv" value="8" />
+          <entry key="csv" value="9" />
           <entry key="csv~Stashed changes" value="1" />
           <entry key="py" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSV" value="8" />
+          <entry key="CSV" value="9" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Python" value="14" />
         </counts>
@@ -54,7 +52,7 @@
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -111,13 +109,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch7_classification_all_classes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="54" column="51" lean-forward="true" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="51" />
+            <state relative-caret-position="-17">
+              <caret line="82" column="8" selection-start-line="82" selection-end-line="82" selection-end-column="8" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PythonCode/intermediate_datafiles/chapter5_result.csv">
+          <provider selected="true" editor-type-id="LargeFileEditor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -129,11 +132,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PythonCode/Chapter7/PrepareDatasetForLearning.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+            <state relative-caret-position="253">
+              <caret line="142" column="21" selection-start-line="142" selection-start-column="21" selection-end-line="142" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -421,12 +424,12 @@
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23761714" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23761714" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4986613" visible="true" weight="0.26722926" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49799198" weight="0.26722926" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39770356" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -434,7 +437,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.27707455" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50133866" side_tool="true" weight="0.4092827" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.502008" side_tool="true" weight="0.26722926" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32911393" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32911393" />
       <window_info anchor="bottom" id="Messages" order="13" />
@@ -470,11 +473,6 @@
     <entry file="file://$PROJECT_DIR$/scripts/Create_dataset.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1461" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PythonCode/intermediate_datafiles/chapter5_result.csv">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="-187" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/intermediate_datafiles/chapter3_result_outliers.csv">
@@ -595,17 +593,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch7_classification_all_classes.py">
+    <entry file="file://$PROJECT_DIR$/PythonCode/Chapter7/PrepareDatasetForLearning.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="54" column="51" lean-forward="true" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="51" />
+        <state relative-caret-position="253">
+          <caret line="142" column="21" selection-start-line="142" selection-start-column="21" selection-end-line="142" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonCode/Chapter7/PrepareDatasetForLearning.py">
+    <entry file="file://$PROJECT_DIR$/PythonCode/intermediate_datafiles/chapter5_result.csv">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch7_classification_all_classes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+        <state relative-caret-position="-17">
+          <caret line="82" column="8" selection-start-line="82" selection-end-line="82" selection-end-column="8" />
         </state>
       </provider>
     </entry>
