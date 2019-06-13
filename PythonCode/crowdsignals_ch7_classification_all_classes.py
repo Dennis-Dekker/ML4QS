@@ -8,7 +8,7 @@
 ##############################################################
 
 from util.VisualizeDataset import VisualizeDataset
-from Chapter7.PrepareDatasetForLearning import PrepareDatasetForLearning
+from Chapter7.PrepareDatasetForLearning_all_classes import PrepareDatasetForLearning
 from Chapter7.LearningAlgorithms import ClassificationAlgorithms
 from Chapter7.LearningAlgorithms import RegressionAlgorithms
 from Chapter7.Evaluation import ClassificationEvaluation
