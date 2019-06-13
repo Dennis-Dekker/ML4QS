@@ -95,12 +95,11 @@ class PrepareDatasetForLearning:
         return train_X, test_X, train_y, test_y
 
 
-    # Split a dataset of a single person for a regression with the specified targets. We can
-    # have multiple targets if we want. It assumes a list in 'targets'
-    # We can select whether we have a temporal dataset or not. In the former, we will select the first
-    # training_frac of the data for training and the last 1-training_frac for testing. Otherwise, we select points randomly.
-    # We return a training set, the labels of the training set, and the same for a test set. We can set the random seed
-    # to make the split reproducible.
+    # Split a dataset of a single person for a regression with the specified targets. We can have multiple targets if
+    #  we want. It assumes a list in 'targets' We can select whether we have a temporal dataset or not. In the
+    # former, we will select the first training_frac of the data for training and the last 1-training_frac for
+    # testing. Otherwise, we select points randomly. We return a training set, the labels of the training set,
+    # and the same for a test set. We can set the random seed to make the split reproducible.
     def split_single_dataset_regression(self, dataset, targets, training_frac, filter=False, temporal=False, random_state=0):
         # We just temporarily change some attribute values associated with the classification algorithm
         # and change them for numerical values. We then simply apply the classification variant of the
@@ -123,12 +122,12 @@ class PrepareDatasetForLearning:
             else:
                 return source_set.append(addition)
 
-    # If we have multiple datasets representing different users and want to perform classification,
-    # we do the same as we have seen for the single dataset
-    # case. However, now we can in addition select what we would like to predict: do we want to perform well for an unknown
-    # use (unknown_user=True) or for unseen data over all users. In the former, it return a training set containing
-    # all data of training_frac users and test data for the remaining users. If the later, it return the training_frac
-    # data of each user as a training set, and 1-training_frac data as a test set.
+    # If we have multiple datasets representing different users and want to perform classification, we do the same as
+    #  we have seen for the single dataset case. However, now we can in addition select what we would like to
+    # predict: do we want to perform well for an unknown use (unknown_user=True) or for unseen data over all users.
+    # In the former, it return a training set containing all data of training_frac users and test data for the
+    # remaining users. If the later, it return the training_frac data of each user as a training set,
+    # and 1-training_frac data as a test set.
     def split_multiple_datasets_classification(self, datasets, class_labels, matching, training_frac, filter=False, temporal=False, unknown_users=False, random_state=0):
         training_set_X = None
         training_set_y = None
