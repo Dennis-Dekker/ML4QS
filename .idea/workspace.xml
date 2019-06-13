@@ -24,38 +24,8 @@
     <SUITE FILE_PATH="coverage/ML4QS$ch4_Martin.coverage" NAME="ch4_Martin Coverage Results" MODIFIED="1560108347242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PythonCode" />
     <SUITE FILE_PATH="coverage/ML4QS$crowdsignals_ch4_our.coverage" NAME="crowdsignals_ch4_our Coverage Results" MODIFIED="1560338565693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PythonCode" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="162689708">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="py" value="5" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Python" value="5" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="py" value="169" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Python" value="169" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch7_classification.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -201,6 +171,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -228,7 +199,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -253,29 +223,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.crowdsignals_ch4">
-    <configuration name="crowdsignals_ch3_outliers_our" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ML4QS" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PythonCode" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonCode/crowdsignals_ch3_outliers_our.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.crowdsignals_ch5_our">
     <configuration name="crowdsignals_ch3_rest_our" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ML4QS" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -342,6 +290,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="crowdsignals_ch5_our" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ML4QS" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PythonCode" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonCode/crowdsignals_ch5_our.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="crowdsignals_ch7_classification_all_classes" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ML4QS" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -365,19 +334,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.crowdsignals_ch3_outliers_our" />
       <item itemvalue="Python.crowdsignals_ch3_rest_our" />
+      <item itemvalue="Python.crowdsignals_ch4" />
       <item itemvalue="Python.crowdsignals_ch4_our" />
       <item itemvalue="Python.crowdsignals_ch7_classification_all_classes" />
-      <item itemvalue="Python.crowdsignals_ch4" />
+      <item itemvalue="Python.crowdsignals_ch5_our" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.crowdsignals_ch5_our" />
         <item itemvalue="Python.crowdsignals_ch4" />
         <item itemvalue="Python.crowdsignals_ch7_classification_all_classes" />
         <item itemvalue="Python.crowdsignals_ch4_our" />
         <item itemvalue="Python.crowdsignals_ch3_rest_our" />
-        <item itemvalue="Python.crowdsignals_ch3_outliers_our" />
       </list>
     </recent_temporary>
   </component>
@@ -401,6 +370,15 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
     <layout>
@@ -413,11 +391,11 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39770356" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32911393" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4991772" weight="0.32881" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.27661794" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49972573" weight="0.27661794" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.502008" side_tool="true" weight="0.48523206" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5019199" side_tool="true" weight="0.34968686" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32881" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32911393" />
       <window_info anchor="bottom" id="Messages" order="13" />
@@ -494,15 +472,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/clustering_ch5_owndata.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="110">
           <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/Chapter7/PrepareDatasetForLearning.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2346">
-          <caret line="142" column="21" selection-start-line="142" selection-start-column="21" selection-end-line="142" selection-end-column="21" />
+        <state relative-caret-position="1100">
+          <caret line="54" column="109" selection-start-line="54" selection-start-column="105" selection-end-line="54" selection-end-column="109" />
         </state>
       </provider>
     </entry>
