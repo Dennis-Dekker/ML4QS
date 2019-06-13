@@ -78,16 +78,16 @@ features_after_chapter_5 = list(set().union(basic_features, pca_features, time_f
 
 # First, let us consider the performance over a selection of features:
 
-fs = FeatureSelectionClassification()
-
-features, ordered_features, ordered_scores = fs.forward_selection(50, train_X[features_after_chapter_5], train_y)
-print ordered_scores
-print ordered_features
-
-plot.plot(range(1, 51), ordered_scores)
-plot.xlabel('number of features')
-plot.ylabel('accuracy')
-plot.show()
+# fs = FeatureSelectionClassification()
+#
+# features, ordered_features, ordered_scores = fs.forward_selection(50, train_X[features_after_chapter_5], train_y)
+# print ordered_scores
+# print ordered_features
+#
+# plot.plot(range(1, 51), ordered_scores)
+# plot.xlabel('number of features')
+# plot.ylabel('accuracy')
+# plot.show()
 
 # Based on the plot we select the top 10 features.
 
@@ -109,9 +109,11 @@ performance_test = []
 repeats = 20
 
 for reg_param in reg_parameters:
+    print reg_param
     performance_tr = 0
     performance_te = 0
     for i in range(0, repeats):
+        print i
         class_train_y, class_test_y, class_train_prob_y, class_test_prob_y = learner.feedforward_neural_network(train_X, train_y,
                                                                                                             test_X, hidden_layer_sizes=(250, ), alpha=reg_param, max_iter=500,
                                                                                                             gridsearch=False)
@@ -140,6 +142,7 @@ performance_training = []
 performance_test = []
 
 for no_points_leaf in leaf_settings:
+    print no_points_leaf
     class_train_y, class_test_y, class_train_prob_y, class_test_prob_y = learner.decision_tree(train_X[selected_features], train_y, test_X[selected_features], min_samples_leaf=no_points_leaf,
                                                                                                gridsearch=False, print_model_details=False)
     performance_training.append(eval.accuracy(train_y, class_train_y))
@@ -167,6 +170,7 @@ repeats = 5
 scores_over_all_algs = []
 
 for i in range(0, len(possible_feature_sets)):
+    print i
     selected_train_X = train_X[possible_feature_sets[i]]
     selected_test_X = test_X[possible_feature_sets[i]]
 
@@ -180,6 +184,7 @@ for i in range(0, len(possible_feature_sets)):
     performance_te_svm = 0
 
     for repeat in range(0, repeats):
+        print repeat
         class_train_y, class_test_y, class_train_prob_y, class_test_prob_y = learner.feedforward_neural_network(selected_train_X, train_y, selected_test_X, gridsearch=True)
         performance_tr_nn += eval.accuracy(train_y, class_train_y)
         performance_te_nn += eval.accuracy(test_y, class_test_y)

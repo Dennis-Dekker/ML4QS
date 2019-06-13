@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e8d39fd-e189-4427-b4cf-d2fd77f19dce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/PythonCode/Chapter7/PrepareDatasetForLearning_all_classes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonCode/Chapter7/PrepareDatasetForLearning.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/Chapter7/PrepareDatasetForLearning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonCode/crowdsignals_ch7_classification_all_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/crowdsignals_ch7_classification_all_classes.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +15,7 @@
     <SUITE FILE_PATH="coverage/ML4QS$crowdsignals_ch3_outliers_our.coverage" NAME="crowdsignals_ch3_outliers_our Coverage Results" MODIFIED="1560337261295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PythonCode" />
     <SUITE FILE_PATH="coverage/ML4QS$crowdsignals_ch4.coverage" NAME="crowdsignals_ch4 Coverage Results" MODIFIED="1560417602128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PythonCode" />
     <SUITE FILE_PATH="coverage/ML4QS$clustering_ch5_owndata.coverage" NAME="clustering_ch5_owndata Coverage Results" MODIFIED="1560333136269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PythonCode" />
-    <SUITE FILE_PATH="coverage/ML4QS$crowdsignals_ch7_classification_all_classes.coverage" NAME="crowdsignals_ch7_classification_all_classes Coverage Results" MODIFIED="1560350745161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PythonCode" />
+    <SUITE FILE_PATH="coverage/ML4QS$crowdsignals_ch7_classification_all_classes.coverage" NAME="crowdsignals_ch7_classification_all_classes Coverage Results" MODIFIED="1560428872391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PythonCode" />
     <SUITE FILE_PATH="coverage/ML4QS$outlier_detection.coverage" NAME="outlier_detection Coverage Results" MODIFIED="1560073320500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/ML4QS$ch4_Martin.coverage" NAME="ch4_Martin Coverage Results" MODIFIED="1560108347242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PythonCode" />
     <SUITE FILE_PATH="coverage/ML4QS$crowdsignals_ch2.coverage" NAME="crowdsignals_ch2 Coverage Results" MODIFIED="1560249940497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PythonCode" />
@@ -30,12 +29,27 @@
     <session id="162689708">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="1" />
+          <entry key="py" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="1" />
+          <entry key="Python" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="55" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="55" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -45,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch7_classification.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="44" column="43" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
+            <state>
+              <caret line="50" column="39" lean-forward="true" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -92,10 +106,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PythonCode/Chapter7/PrepareDatasetForLearning.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
+            <state relative-caret-position="185">
               <caret line="65" column="12" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
             </state>
           </provider>
@@ -104,26 +118,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PythonCode/Chapter7/PrepareDatasetForLearning_all_classes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
+            <state relative-caret-position="187">
               <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch7_classification_all_classes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="54" column="70" selection-start-line="54" selection-start-column="70" selection-end-line="54" selection-end-column="70" />
+            <state relative-caret-position="1798">
+              <caret line="186" column="20" selection-start-line="186" selection-start-column="20" selection-end-line="186" selection-end-column="20" />
+              <folding>
+                <element signature="e#505#555#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PythonCode/Chapter7/FeatureSelection.py">
+        <entry file="file://$PROJECT_DIR$/PythonCode/Chapter7/LearningAlgorithms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="37" column="19" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="19" />
+            <state relative-caret-position="61">
+              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -161,7 +178,6 @@
         <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch3_outliers_our.py" />
         <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch3_rest_our.py" />
         <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch4_our.py" />
-        <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch7_classification_all_classes.py" />
         <option value="$PROJECT_DIR$/PythonCode/Chapter4/FrequencyAbstraction.py" />
         <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch4.py" />
         <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch7_classification.py" />
@@ -169,6 +185,7 @@
         <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch5_our.py" />
         <option value="$PROJECT_DIR$/PythonCode/Chapter7/PrepareDatasetForLearning_all_classes.py" />
         <option value="$PROJECT_DIR$/PythonCode/Chapter7/PrepareDatasetForLearning.py" />
+        <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch7_classification_all_classes.py" />
       </list>
     </option>
   </component>
@@ -245,7 +262,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.crowdsignals_ch5">
+  <component name="RunManager" selected="Python.crowdsignals_ch7_classification_all_classes">
     <configuration name="crowdsignals_ch4" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ML4QS" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -365,10 +382,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.crowdsignals_ch7_classification_all_classes" />
         <item itemvalue="Python.crowdsignals_ch5" />
         <item itemvalue="Python.crowdsignals_ch5_our" />
         <item itemvalue="Python.crowdsignals_ch4" />
-        <item itemvalue="Python.crowdsignals_ch7_classification_all_classes" />
         <item itemvalue="Python.crowdsignals_ch4_our" />
       </list>
     </recent_temporary>
@@ -406,12 +423,12 @@
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17068273" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17068273" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986613" visible="true" weight="0.35021096" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986613" weight="0.35021096" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39770356" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -514,13 +531,6 @@
     <entry file="file://$PROJECT_DIR$/PythonCode/cluster_ch5_coding1.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch7_classification.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="44" column="43" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch5_our.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1785">
@@ -535,13 +545,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonCode/Chapter4/FrequencyAbstraction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch5.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1373">
@@ -549,24 +552,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch7_classification_all_classes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="54" column="70" selection-start-line="54" selection-start-column="70" selection-end-line="54" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/Chapter7/PrepareDatasetForLearning_all_classes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
+        <state relative-caret-position="187">
           <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/Chapter7/PrepareDatasetForLearning.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
+        <state relative-caret-position="185">
           <caret line="65" column="12" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/Chapter7/LearningAlgorithms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch7_classification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="50" column="39" lean-forward="true" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/Chapter4/FrequencyAbstraction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch7_classification_all_classes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1798">
+          <caret line="186" column="20" selection-start-line="186" selection-start-column="20" selection-end-line="186" selection-end-column="20" />
+          <folding>
+            <element signature="e#505#555#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
