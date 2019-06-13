@@ -31,7 +31,7 @@ DataViz = VisualizeDataset()
 # Read the result from the previous chapter, and make sure the index is of the type datetime.
 
 dataset_path = './intermediate_datafiles/'
-export_tree_path = 'Example_graphs/Chapter7/'
+export_tree_path = './Example_graphs/Chapter7/'
 
 try:
     dataset = pd.read_csv(dataset_path + 'chapter5_result.csv', index_col=0)
@@ -131,7 +131,7 @@ plot.ylim([0.95, 1.01])
 plot.legend(['training', 'test'], loc=4)
 plot.hold(False)
 
-plot.savefig("../Figures/Chapter_7/Accuracy_vs_regularization_parameter.png")
+plot.savefig("Accuracy_vs_regularization_parameter.png")
 
 # Second, let us consider the influence of certain parameter settings (very related to the regulariztion) and study the impact on performance.
 
@@ -153,7 +153,7 @@ plot.ylabel('accuracy')
 plot.legend(['training', 'test'], loc=1)
 plot.hold(False)
 
-plot.savefig("../Figures/Chapter_7/Accuracy_vs_minimum_number_point_per_leaf.png")
+plot.savefig("Accuracy_vs_minimum_number_point_per_leaf.png")
 
 
 # So yes, it is important :) Therefore we perform grid searches over the most important parameters, and do so by means
