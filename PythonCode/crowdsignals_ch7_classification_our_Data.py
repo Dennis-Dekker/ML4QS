@@ -34,7 +34,7 @@ dataset_path = './intermediate_datafiles/'
 export_tree_path = './Example_graphs/Chapter7/'
 
 try:
-    dataset = pd.read_csv(dataset_path + 'chapter5_result_download.csv', index_col=0)
+    dataset = pd.read_csv(dataset_path + 'chapter5_our_result.csv', index_col=0)
 except IOError as e:
     print('File not found, try to run previous crowdsignals scripts first!')
     raise e
@@ -60,8 +60,8 @@ print 'Test set length is: ', len(test_X.index)
 
 # Select subsets of the features that we will consider:
 
-basic_features = ['acc_phone_x','acc_phone_y','acc_phone_z','acc_watch_x','acc_watch_y','acc_watch_z','gyr_phone_x','gyr_phone_y','gyr_phone_z','gyr_watch_x','gyr_watch_y','gyr_watch_z',
-                  'hr_watch_rate', 'light_phone_lux','mag_phone_x','mag_phone_y','mag_phone_z','mag_watch_x','mag_watch_y','mag_watch_z','press_phone_pressure']
+basic_features = ['gFx', 'gFy', 'gFz', 'ax', 'ay', 'az', 'wx', 'wy', 'wz', 'p', 'Bx', 'By', 'Bz', 'Azimuth',
+                         'Pitch', 'Roll', 'Gain']
 pca_features = ['pca_1','pca_2','pca_3','pca_4','pca_5','pca_6','pca_7']
 time_features = [name for name in dataset.columns if '_temp_' in name]
 freq_features = [name for name in dataset.columns if (('_freq' in name) or ('_pse' in name))]
@@ -76,10 +76,10 @@ features_after_chapter_4 = list(set().union(basic_features, pca_features, time_f
 features_after_chapter_5 = list(set().union(basic_features, pca_features, time_features, freq_features, cluster_features))
 
 
-# First, let us consider the performance over a selection of features:
+#First, let us consider the performance over a selection of features:
 
 # fs = FeatureSelectionClassification()
-
+#
 # features, ordered_features, ordered_scores = fs.forward_selection(50, train_X[features_after_chapter_5], train_y)
 # print ordered_scores
 # print ordered_features
@@ -91,9 +91,10 @@ features_after_chapter_5 = list(set().union(basic_features, pca_features, time_f
 
 # Based on the plot we select the top 10 features.
 
-selected_features = ['acc_phone_y_freq_0.0_Hz_ws_40', 'press_phone_pressure_temp_mean_ws_120', 'gyr_phone_x_temp_std_ws_120',
-                     'mag_watch_y_pse', 'mag_phone_z_max_freq', 'gyr_watch_y_freq_weighted', 'gyr_phone_y_freq_1.0_Hz_ws_40',
-                     'acc_phone_x_freq_1.9_Hz_ws_40', 'mag_watch_z_freq_0.9_Hz_ws_40', 'acc_watch_y_freq_0.5_Hz_ws_40']
+selected_features = ['az_freq_0.0_Hz_ws_40', 'Bz_freq_0.4_Hz_ws_40', 'Bx_freq_weighted',
+                     'Azimuth_freq_1.4_Hz_ws_40', 'pca_7_temp_std_ws_120', 'gFx_freq_0.1_Hz_ws_40',
+                     'Azimuth_freq_0.5_Hz_ws_40', 'gFy_freq_2.0_Hz_ws_40', 'ay_freq_1.9_Hz_ws_40',
+                     'wx_freq_1.5_Hz_ws_40']
 
 # Let us first study the impact of regularization and model complexity: does regularization prevent overfitting?
 
@@ -109,9 +110,11 @@ performance_test = []
 repeats = 20
 
 for reg_param in reg_parameters:
+    print reg_param
     performance_tr = 0
     performance_te = 0
     for i in range(0, repeats):
+        print i
         class_train_y, class_test_y, class_train_prob_y, class_test_prob_y = learner.feedforward_neural_network(train_X, train_y,
                                                                                                             test_X, hidden_layer_sizes=(250, ), alpha=reg_param, max_iter=500,
                                                                                                             gridsearch=False)
@@ -140,6 +143,7 @@ performance_training = []
 performance_test = []
 
 for no_points_leaf in leaf_settings:
+    print no_points_leaf
     class_train_y, class_test_y, class_train_prob_y, class_test_prob_y = learner.decision_tree(train_X[selected_features], train_y, test_X[selected_features], min_samples_leaf=no_points_leaf,
                                                                                                gridsearch=False, print_model_details=False)
     performance_training.append(eval.accuracy(train_y, class_train_y))
@@ -167,6 +171,7 @@ repeats = 5
 scores_over_all_algs = []
 
 for i in range(0, len(possible_feature_sets)):
+    print i
     selected_train_X = train_X[possible_feature_sets[i]]
     selected_test_X = test_X[possible_feature_sets[i]]
 
@@ -180,6 +185,7 @@ for i in range(0, len(possible_feature_sets)):
     performance_te_svm = 0
 
     for repeat in range(0, repeats):
+        print repeat
         class_train_y, class_test_y, class_train_prob_y, class_test_prob_y = learner.feedforward_neural_network(selected_train_X, train_y, selected_test_X, gridsearch=True)
         performance_tr_nn += eval.accuracy(train_y, class_train_y)
         performance_te_nn += eval.accuracy(test_y, class_test_y)
