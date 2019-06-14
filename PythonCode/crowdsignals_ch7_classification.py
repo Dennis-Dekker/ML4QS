@@ -34,7 +34,11 @@ dataset_path = './intermediate_datafiles/'
 export_tree_path = './Example_graphs/Chapter7/'
 
 try:
+<<<<<<< HEAD
     dataset = pd.read_csv(dataset_path + 'chapter5_our_result.csv', index_col=0)
+=======
+    dataset = pd.read_csv(dataset_path + 'chapter5_result_download.csv', index_col=0)
+>>>>>>> master
 except IOError as e:
     print('File not found, try to run previous crowdsignals scripts first!')
     raise e
