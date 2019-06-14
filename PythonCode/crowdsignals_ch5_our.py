@@ -60,6 +60,12 @@ plot.show()
 
 # And run the knn with the highest silhouette score
 
+k = 0
+best_silhouette_score = 0
+
+for i in zip(silhouette_values, k_values):
+    pass
+
 k = 6
 
 dataset_knn = clusteringNH.k_means_over_instances(copy.deepcopy(dataset), ['ax', 'ay', 'az'], k, 'default', 50, 50)

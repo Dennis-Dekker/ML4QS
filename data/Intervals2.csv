@@ -1,0 +1,10 @@
+time_1,time_2,activity
+0,45,walk
+45,120,stairs
+120,342,walk
+342,420,stand
+420,540,walk
+540,686,bike
+686,741,stand
+741,843,walk
+843,900,stand
