@@ -98,6 +98,16 @@ def add_labels(dataset, labels, delta_t, min_t, max_t):
 def preprocess(data):
     df_raw = data.drop(["Unnamed: 18"], axis=1)
     df_raw = df_raw[df_raw.Gain != "-∞"]
+    timestamp = []
+    for i in range(0, len(df_raw.index)):
+        timestamp.append("2019:06:14 " + df_raw.time.iloc[i])
+    df_raw.time = timestamp
+    df_raw.time = pd.to_datetime(df_raw.time, format="%Y:%m:%d %H:%M:%S:%f")
+    timestamps = []
+    for i in range(0, len(df_raw.index)):
+        timestamps.append('%.9f' % (float(df_raw.time.iloc[i].to_datetime64().item()) / 1000000000))
+    df_raw.time = timestamps
+    # df_raw.index = pd.to_datetime(df_raw.index, format="%Y:%m:%d %H:%M:%S:%f")
     df_raw = df_raw.astype("float64")
 
     return df_raw
@@ -105,10 +115,10 @@ def preprocess(data):
 
 def main():
     # Variables
-    delta_t = [6,0.25]
+    delta_t = [0.25]
 
-    data = pd.read_csv("../data/first_data")
-    labels = pd.read_csv("../data/intervals.csv", sep="\t")
+    data = pd.read_csv("../data/ML4QS_testrun_2")
+    labels = pd.read_csv("../data/Intervals2.csv")
     df_raw = preprocess(data)
 
     for delta in delta_t:
@@ -116,7 +126,7 @@ def main():
 
         plot_dataset(dataset, "../output/" + str(int(delta * 1000)) + "ms_")
 
-    dataset.to_csv("../data/processed_data.csv")
+    dataset.to_csv("../data/processed_data_2_Martin.csv")
 
 
 if __name__ == '__main__':

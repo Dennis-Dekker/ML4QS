@@ -20,7 +20,7 @@ DataViz = VisualizeDataset()
 # Read the result from the previous chapter, and make sture the index is of the type datetime.
 dataset_path = './intermediate_datafiles/'
 try:
-    dataset = pd.read_csv(dataset_path + 'Data_processed_timestamps.csv', index_col=0)
+    dataset = pd.read_csv(dataset_path + 'Data_processed_timestamps_2.csv', index_col=0)
 except IOError as e:
     print('File not found, try to run previous crowdsignals scripts first!')
     raise e

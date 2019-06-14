@@ -78,16 +78,16 @@ features_after_chapter_5 = list(set().union(basic_features, pca_features, time_f
 
 #First, let us consider the performance over a selection of features:
 
-# fs = FeatureSelectionClassification()
-#
-# features, ordered_features, ordered_scores = fs.forward_selection(50, train_X[features_after_chapter_5], train_y)
-# print ordered_scores
-# print ordered_features
-#
-# plot.plot(range(1, 51), ordered_scores)
-# plot.xlabel('number of features')
-# plot.ylabel('accuracy')
-# plot.show()
+fs = FeatureSelectionClassification()
+
+features, ordered_features, ordered_scores = fs.forward_selection(50, train_X[features_after_chapter_5], train_y)
+print ordered_scores
+print ordered_features
+
+plot.plot(range(1, 51), ordered_scores)
+plot.xlabel('number of features')
+plot.ylabel('accuracy')
+plot.show()
 
 # Based on the plot we select the top 10 features.
 

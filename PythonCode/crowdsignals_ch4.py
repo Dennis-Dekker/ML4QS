@@ -82,4 +82,14 @@ dataset = dataset.iloc[::skip_points,:]
 
 dataset.to_csv(dataset_path + 'chapter4_result.csv')
 
-DataViz.plot_dataset(dataset, ['acc_phone_x', 'gyr_phone_x', 'hr_watch_rate', 'light_phone_lux', 'mag_phone_x', 'press_phone_', 'pca_1', 'label'], ['like', 'like', 'like', 'like', 'like', 'like', 'like','like'], ['line', 'line', 'line', 'line', 'line', 'line', 'line', 'points'])
+DataViz.plot_dataset(dataset, ['acc_phone_x', 'gyr_phone_x', 'hr_watch_rate', 'light_phone_lux', 'mag_phone_x', 'press_phone_', 'pca_1', 'label'],
+ ['like', 'like', 'like', 'like', 'like', 'like', 'like','like'],
+  ['line', 'line', 'line', 'line', 'line', 'line', 'line', 'points'])
+  
+  
+  
+  
+  
+  
+  
+  
