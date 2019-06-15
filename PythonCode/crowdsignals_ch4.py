@@ -47,7 +47,7 @@ for ws in window_sizes:
 
 DataViz.plot_dataset(dataset_copy, ['acc_phone_x', 'acc_phone_x_temp_mean', 'acc_phone_x_temp_std', 'label'], ['exact', 'like', 'like', 'like'], ['line', 'line', 'line', 'points'])
 
-ws = int(float(0.5*60000)/milliseconds_per_instance)
+ws = int(float(0.5 * 60000)/milliseconds_per_instance)
 selected_predictor_cols = [c for c in dataset.columns if not 'label' in c]
 dataset = NumAbs.abstract_numerical(dataset, selected_predictor_cols, ws, 'mean')
 dataset = NumAbs.abstract_numerical(dataset, selected_predictor_cols, ws, 'std')
@@ -68,7 +68,8 @@ data_table = FreqAbs.abstract_frequency(copy.deepcopy(dataset), ['acc_phone_x'],
 
 # Spectral analysis.
 
-DataViz.plot_dataset(data_table, ['acc_phone_x_max_freq', 'acc_phone_x_freq_weighted', 'acc_phone_x_pse', 'label'], ['like', 'like', 'like', 'like'], ['line', 'line', 'line','points'])
+DataViz.plot_dataset(data_table, ['acc_phone_x_max_freq', 'acc_phone_x_freq_weighted', 'acc_phone_x_pse', 'label'], 
+                                    ['like', 'like', 'like', 'like'], ['line', 'line', 'line','points'])
 
 dataset = FreqAbs.abstract_frequency(dataset, periodic_predictor_cols, int(float(10000)/milliseconds_per_instance), fs)
 

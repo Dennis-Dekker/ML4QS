@@ -2,31 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1f45f46-2a46-40ae-ba0f-5b8ca7c1e80a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/PythonCode/intermediate_datafiles/processed_data_2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/processed_data_2.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/ML4QS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ML4QS.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonCode/Fix_timestamps.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/Fix_timestamps.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonCode/crowdsignals_ch3_outliers_our.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/crowdsignals_ch3_outliers_our.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonCode/crowdsignals_ch3_rest_our.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/crowdsignals_ch3_rest_our.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PythonCode/crowdsignals_ch4.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/crowdsignals_ch4.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PythonCode/crowdsignals_ch4_our.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/crowdsignals_ch4_our.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonCode/crowdsignals_ch5_our.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/crowdsignals_ch5_our.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonCode/crowdsignals_ch7_classification_our_Data.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/crowdsignals_ch7_classification_our_Data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonCode/intermediate_datafiles/.~lock.chapter5_our_result.csv#" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonCode/intermediate_datafiles/chapter3_our_result_final.csv" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/intermediate_datafiles/chapter3_our_result_final.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonCode/intermediate_datafiles/chapter3_our_result_outliers.csv" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/intermediate_datafiles/chapter3_our_result_outliers.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonCode/intermediate_datafiles/chapter4_our_result.csv" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/intermediate_datafiles/chapter4_our_result.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonCode/intermediate_datafiles/chapter5_our_result.csv" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/intermediate_datafiles/chapter5_our_result.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/250ms_g_force.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/250ms_g_force.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/250ms_gyro.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/250ms_gyro.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/250ms_inclination.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/250ms_inclination.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/250ms_lin_acc.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/250ms_lin_acc.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/250ms_magnetic.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/250ms_magnetic.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/250ms_pressure.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/250ms_pressure.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/250ms_sound.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/250ms_sound.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/Create_dataset_group70.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Create_dataset_group70.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonCode/crowdsignals_ch8_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/crowdsignals_ch8_regression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonCode/perf_overview.png" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/perf_overview.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,12 +17,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch4_our.py">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PythonCode/Chapter8/LearningAlgorithmsTemporal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-101">
-              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+            <state relative-caret-position="550">
+              <caret line="46" column="77" lean-forward="true" selection-start-line="46" selection-start-column="77" selection-end-line="46" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch8_regression.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="178" selection-start-line="178" selection-end-line="178" />
             </state>
           </provider>
         </entry>
@@ -57,9 +48,10 @@
         <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch3_rest_our.py" />
         <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch5_our.py" />
         <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch7_classification_our_Data.py" />
-        <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch4_our.py" />
         <option value="$PROJECT_DIR$/scripts/Create_dataset_group70.py" />
         <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch2.py" />
+        <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch4_our.py" />
+        <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch8_regression.py" />
       </list>
     </option>
   </component>
@@ -74,6 +66,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -89,13 +82,18 @@
             <path>
               <item name="ML4QS" type="b2602c69:ProjectViewProjectNode" />
               <item name="ML4QS" type="462c0819:PsiDirectoryNode" />
+              <item name="PythonCode" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter8" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ML4QS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ML4QS" type="462c0819:PsiDirectoryNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -121,7 +119,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Create_dataset_group70">
+  <component name="RunManager" selected="Python.crowdsignals_ch8_regression">
     <configuration name="Create_dataset_group70" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ML4QS" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -156,27 +154,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonCode/crowdsignals_ch4_our.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="crowdsignals_ch5" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ML4QS" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PythonCode" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonCode/crowdsignals_ch5.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -227,20 +204,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="crowdsignals_ch8_regression" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ML4QS" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PythonCode" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonCode/crowdsignals_ch8_regression.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Python.Create_dataset_group70" />
       <item itemvalue="Python.crowdsignals_ch4_our" />
-      <item itemvalue="Python.crowdsignals_ch5" />
       <item itemvalue="Python.crowdsignals_ch5_our" />
       <item itemvalue="Python.crowdsignals_ch7_classification_our_Data" />
-      <item itemvalue="Python.Create_dataset_group70" />
+      <item itemvalue="Python.crowdsignals_ch8_regression" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Create_dataset_group70" />
+        <item itemvalue="Python.crowdsignals_ch8_regression" />
         <item itemvalue="Python.crowdsignals_ch4_our" />
+        <item itemvalue="Python.Create_dataset_group70" />
         <item itemvalue="Python.crowdsignals_ch7_classification_our_Data" />
         <item itemvalue="Python.crowdsignals_ch5_our" />
-        <item itemvalue="Python.crowdsignals_ch5" />
       </list>
     </recent_temporary>
   </component>
@@ -261,12 +259,12 @@
     <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.402633" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.020844761" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32463464" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32463464" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -301,27 +299,27 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/intermediate_datafiles/processed_data.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/intermediate_datafiles/owndata_result.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-396" />
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/intermediate_datafiles/owndata.csv">
       <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/intermediate_datafiles/Data_processed_timestamps.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/Chapter2/CreateDataset.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -330,23 +328,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/processed_data_.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/processed_data_.csv" />
     <entry file="file://$PROJECT_DIR$/data/processed_data_2.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/intermediate_datafiles/processed_data_2.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch5.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -406,10 +399,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/intermediate_datafiles/chapter4_our_result.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch3_rest_our.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -418,24 +411,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="87" column="2" selection-start-line="87" selection-start-column="2" selection-end-line="87" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/intermediate_datafiles/chapter3_our_result_final.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/intermediate_datafiles/chapter3_our_result_outliers.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch3_outliers_our.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -473,10 +459,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="87" column="2" selection-start-line="87" selection-start-column="2" selection-end-line="87" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch4_our.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-101">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="471">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/Chapter8/LearningAlgorithmsTemporal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="46" column="77" lean-forward="true" selection-start-line="46" selection-start-column="77" selection-end-line="46" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch8_regression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="178" selection-start-line="178" selection-end-line="178" />
         </state>
       </provider>
     </entry>
