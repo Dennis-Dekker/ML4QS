@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1f45f46-2a46-40ae-ba0f-5b8ca7c1e80a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ML4QS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ML4QS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonCode/crowdsignals_ch4.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/crowdsignals_ch4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonCode/crowdsignals_ch4_our.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/crowdsignals_ch4_our.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonCode/crowdsignals_ch8_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/crowdsignals_ch8_regression.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonCode/perf_overview.png" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/perf_overview.png" afterDir="false" />
-    </list>
+    <list default="true" id="e1f45f46-2a46-40ae-ba0f-5b8ca7c1e80a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,7 +251,7 @@
     <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.020844761" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29840922" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
