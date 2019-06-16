@@ -30,6 +30,8 @@ dataset.index = dataset.index.to_datetime()
 # Compute the number of milliseconds covered by an instance based on the first two rows
 milliseconds_per_instance = (dataset.index[1] - dataset.index[0]).microseconds/1000
 
+print(dataset.index[1])
+
 # Step 1: Let us see whether we have some outliers we would prefer to remove.
 
 # Determine the columns we want to experiment on.

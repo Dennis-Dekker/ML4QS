@@ -2,23 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1f45f46-2a46-40ae-ba0f-5b8ca7c1e80a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/PythonCode/intermediate_datafiles/processed_data_2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/processed_data_2.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PythonCode/crowdsignals_ch8_regression_our.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/ML4QS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ML4QS.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figures/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/Figures/Thumbs.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonCode/Accuracy_vs_minimum_number_point_per_leaf_our.png" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/Accuracy_vs_minimum_number_point_per_leaf_our.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonCode/Accuracy_vs_regularization_parameter_our.png" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/Accuracy_vs_regularization_parameter_our.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonCode/Example_graphs/Chapter7/tree.dot" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/Example_graphs/Chapter7/tree.dot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PythonCode/Fix_timestamps.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/Fix_timestamps.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PythonCode/crowdsignals_ch3_outliers_our.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/crowdsignals_ch3_outliers_our.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonCode/crowdsignals_ch3_rest.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/crowdsignals_ch3_rest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PythonCode/crowdsignals_ch3_rest_our.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/crowdsignals_ch3_rest_our.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PythonCode/crowdsignals_ch4.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/crowdsignals_ch4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonCode/crowdsignals_ch4_our.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/crowdsignals_ch4_our.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonCode/crowdsignals_ch5_our.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/crowdsignals_ch5_our.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonCode/crowdsignals_ch7_classification_our_Data.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/crowdsignals_ch7_classification_our_Data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonCode/intermediate_datafiles/.~lock.chapter5_our_result.csv#" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/PythonCode/intermediate_datafiles/chapter3_our_result_final.csv" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/intermediate_datafiles/chapter3_our_result_final.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PythonCode/intermediate_datafiles/chapter3_our_result_outliers.csv" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/intermediate_datafiles/chapter3_our_result_outliers.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PythonCode/intermediate_datafiles/chapter4_our_result.csv" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/intermediate_datafiles/chapter4_our_result.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PythonCode/intermediate_datafiles/chapter5_our_result.csv" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/intermediate_datafiles/chapter5_our_result.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonCode/perf_overview.png" beforeDir="false" afterPath="$PROJECT_DIR$/PythonCode/perf_overview.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fix_timestamps_2-Copy1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/fix_timestamps_2-Copy1.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fix_timestamps_2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/fix_timestamps_2.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/250ms_g_force.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/250ms_g_force.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/250ms_gyro.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/250ms_gyro.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/250ms_inclination.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/250ms_inclination.png" afterDir="false" />
@@ -34,18 +37,136 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/ML4QS$crowdsignals_ch3_outliers_our.coverage" NAME="crowdsignals_ch3_outliers_our Coverage Results" MODIFIED="1560635236054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PythonCode" />
+    <SUITE FILE_PATH="coverage/ML4QS$crowdsignals_ch3_rest_our.coverage" NAME="crowdsignals_ch3_rest_our Coverage Results" MODIFIED="1560635497173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PythonCode" />
+    <SUITE FILE_PATH="coverage/ML4QS$crowdsignals_ch7_classification_our_Data.coverage" NAME="crowdsignals_ch7_classification_our_Data Coverage Results" MODIFIED="1560637325730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PythonCode" />
+    <SUITE FILE_PATH="coverage/ML4QS$Create_dataset_group70.coverage" NAME="Create_dataset_group70 Coverage Results" MODIFIED="1560633210044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/ML4QS$crowdsignals_ch3_rest.coverage" NAME="crowdsignals_ch3_rest Coverage Results" MODIFIED="1560634064193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PythonCode" />
+    <SUITE FILE_PATH="coverage/ML4QS$crowdsignals_ch8_regression_our.coverage" NAME="crowdsignals_ch8_regression_our Coverage Results" MODIFIED="1560671116042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PythonCode" />
+    <SUITE FILE_PATH="coverage/ML4QS$crowdsignals_ch5_our.coverage" NAME="crowdsignals_ch5_our Coverage Results" MODIFIED="1560637288918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PythonCode" />
+    <SUITE FILE_PATH="coverage/ML4QS$crowdsignals_ch4_our.coverage" NAME="crowdsignals_ch4_our Coverage Results" MODIFIED="1560635524296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PythonCode" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="162689708">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="csv" value="9" />
+          <entry key="ipynb" value="6" />
+          <entry key="py" value="22" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSV" value="9" />
+          <entry key="IPNB" value="6" />
+          <entry key="Python" value="22" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Python Console" value="13" />
+          <entry key="py" value="163" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="176" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch3_rest_our.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch4_our.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-101">
-              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+            <state relative-caret-position="-750">
+              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+              <folding>
+                <element signature="e#505#555#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch5_our.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch7_classification_our_Data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="93" column="20" lean-forward="true" selection-start-line="93" selection-start-column="20" selection-end-line="96" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch8_regression.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-867" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch8_regression_our.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1940">
+              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+              <folding>
+                <element signature="e#505#555#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>heart rate</find>
+      <find>hr_watch_rate</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Azimuth</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,15 +174,25 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch3_outliers_our.py" />
-        <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch3_rest_our.py" />
         <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch5_our.py" />
         <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch7_classification_our_Data.py" />
         <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch4_our.py" />
-        <option value="$PROJECT_DIR$/scripts/Create_dataset_group70.py" />
         <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch2.py" />
+        <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch4.py" />
+        <option value="$PROJECT_DIR$/fix_timestamps_2-Copy1.ipynb" />
+        <option value="$PROJECT_DIR$/scripts/Create_dataset_group70.py" />
+        <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch3_rest_our.py" />
+        <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch3_rest.py" />
+        <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch3_outliers_our.py" />
+        <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch8_regression_our.py" />
       </list>
     </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="95" />
@@ -74,6 +205,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -89,22 +221,29 @@
             <path>
               <item name="ML4QS" type="b2602c69:ProjectViewProjectNode" />
               <item name="ML4QS" type="462c0819:PsiDirectoryNode" />
+              <item name="PythonCode" type="462c0819:PsiDirectoryNode" />
+              <item name="intermediate_datafiles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ML4QS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ML4QS" type="462c0819:PsiDirectoryNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/PythonCode/intermediate_datafiles" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Figures" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dennis\Documents\GitHub\ML4QS\PythonCode" />
       <recent name="$PROJECT_DIR$/PythonCode/intermediate_datafiles" />
       <recent name="$PROJECT_DIR$/data" />
     </key>
@@ -121,8 +260,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Create_dataset_group70">
-    <configuration name="Create_dataset_group70" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.crowdsignals_ch8_regression_our">
+    <configuration name="crowdsignals_ch3_rest_our" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ML4QS" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -130,11 +269,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PythonCode" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/Create_dataset_group70.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonCode/crowdsignals_ch3_rest_our.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -155,28 +295,8 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonCode/crowdsignals_ch4_our.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="crowdsignals_ch5" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ML4QS" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PythonCode" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonCode/crowdsignals_ch5.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -197,6 +317,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonCode/crowdsignals_ch5_our.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -218,7 +339,30 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonCode/crowdsignals_ch7_classification_our_Data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="crowdsignals_ch8_regression_our" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ML4QS" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PythonCode" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonCode/crowdsignals_ch8_regression_our.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -229,18 +373,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.crowdsignals_ch4_our" />
-      <item itemvalue="Python.crowdsignals_ch5" />
+      <item itemvalue="Python.crowdsignals_ch3_rest_our" />
       <item itemvalue="Python.crowdsignals_ch5_our" />
       <item itemvalue="Python.crowdsignals_ch7_classification_our_Data" />
-      <item itemvalue="Python.Create_dataset_group70" />
+      <item itemvalue="Python.crowdsignals_ch8_regression_our" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Create_dataset_group70" />
-        <item itemvalue="Python.crowdsignals_ch4_our" />
+        <item itemvalue="Python.crowdsignals_ch8_regression_our" />
         <item itemvalue="Python.crowdsignals_ch7_classification_our_Data" />
         <item itemvalue="Python.crowdsignals_ch5_our" />
-        <item itemvalue="Python.crowdsignals_ch5" />
+        <item itemvalue="Python.crowdsignals_ch4_our" />
+        <item itemvalue="Python.crowdsignals_ch3_rest_our" />
       </list>
     </recent_temporary>
   </component>
@@ -257,28 +401,46 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.402633" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18473895" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32463464" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32348806" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32911393" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32911393" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32911393" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32911393" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3299866" />
+      <window_info active="true" anchor="right" id="SciView" order="4" visible="true" weight="0.32931727" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/data/gyroscope_smartwatch.csv">
@@ -317,12 +479,6 @@
     <entry file="file://$PROJECT_DIR$/PythonCode/intermediate_datafiles/owndata.csv">
       <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonCode/intermediate_datafiles/Data_processed_timestamps.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/Chapter2/CreateDataset.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
@@ -330,12 +486,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/processed_data_.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/processed_data_.csv" />
     <entry file="file://$PROJECT_DIR$/data/processed_data_2.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
@@ -363,13 +514,6 @@
     <entry file="file://$PROJECT_DIR$/PythonCode/intermediate_datafiles/chapter5_our_result.csv">
       <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch7_classification_our_Data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/Chapter4/FrequencyAbstraction.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -384,13 +528,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch5_our.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-109">
-          <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/Chapter7/PrepareDatasetForLearning.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
@@ -398,30 +535,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.local/lib/python2.7/site-packages/sklearn/ensemble/weight_boosting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python2.7/site-packages/sklearn/ensemble/weight_boosting.py" />
     <entry file="file://$PROJECT_DIR$/PythonCode/intermediate_datafiles/chapter4_our_result.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
       <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch3_rest_our.py">
+    <entry file="file://$PROJECT_DIR$/scripts/Create_dataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="101" column="1" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
+        <state relative-caret-position="-676" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fix_timestamps_2.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="87" column="2" selection-start-line="87" selection-start-column="2" selection-end-line="87" selection-end-column="2" />
+        <state relative-caret-position="415">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
@@ -437,46 +580,129 @@
       </provider>
       <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/intermediate_datafiles/chapter3_result_outliers.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/Fix_timestamps.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/intermediate_datafiles/Data_processed_timestamps_2.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/intermediate_datafiles/Data_processed_timestamps.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch3_outliers.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/intermediate_datafiles/chapter2_result.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/intermediate_datafiles/Data_processed_timestamps_2_Dennis.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/Create_dataset_group70.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="107" column="63" selection-start-line="107" selection-start-column="63" selection-end-line="107" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fix_timestamps_2-Copy1.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch3_outliers_our.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="17">
+          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
           <folding>
             <element signature="e#505#555#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/Create_dataset.py">
+    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch3_rest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-676">
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/Create_dataset_group70.py">
+    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch3_rest_our.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="104" column="7" selection-start-line="104" selection-start-column="7" selection-end-line="104" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+        <state relative-caret-position="340">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch4_our.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-101">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="-750">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+          <folding>
+            <element signature="e#505#555#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch5_our.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch7_classification_our_Data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="93" column="20" lean-forward="true" selection-start-line="93" selection-start-column="20" selection-end-line="96" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch8_regression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-867" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch8_regression_our.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1940">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="e#505#555#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

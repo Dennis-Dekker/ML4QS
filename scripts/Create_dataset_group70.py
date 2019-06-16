@@ -105,7 +105,7 @@ def preprocess(data):
     df_raw.time = pd.to_datetime(df_raw.time, format="%Y:%m:%d %H:%M:%S:%f")
     timestamps = []
     for i in range(0, len(df_raw.index)):
-        timestamps.append('%.9f' % (float(df_raw.time.iloc[i].to_datetime64().item()) / 1000000000))
+        timestamps.append('%.6f' % (float(df_raw.time.iloc[i].to_datetime64().item()) / 1000000000))
     df_raw.time = timestamps
     # df_raw.index = pd.to_datetime(df_raw.index, format="%Y:%m:%d %H:%M:%S:%f")
     df_raw = df_raw.astype("float64")
@@ -126,7 +126,7 @@ def main():
 
         plot_dataset(dataset, "../output/" + str(int(delta * 1000)) + "ms_")
 
-    dataset.to_csv("../data/processed_data_2_Martin.csv")
+    dataset.to_csv("../data/processed_data_2_Dennis.csv")
 
 
 if __name__ == '__main__':

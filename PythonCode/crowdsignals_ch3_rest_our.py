@@ -26,7 +26,9 @@ dataset = pd.read_csv(dataset_path + 'chapter3_our_result_outliers.csv', index_c
 dataset.index = dataset.index.to_datetime()
 
 # Computer the number of milliseconds covered by an instane based on the first two rows
-milliseconds_per_instance = (dataset.index[1] - dataset.index[0]).microseconds / 1000
+milliseconds_per_instance = (dataset.index[1] - dataset.index[0]).microseconds/1000
+
+print(dataset.index[1])
 
 # Step 2: Let us impute the missing values.
 
