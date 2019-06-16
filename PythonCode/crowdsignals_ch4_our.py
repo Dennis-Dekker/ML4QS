@@ -46,14 +46,13 @@ for ws in window_sizes:
 
 DataViz.plot_dataset(dataset_copy, ['ax', 'ax_temp_mean', 'ax_temp_std', 'label'], ['exact', 'like', 'like', 'like'],['line', 'line', 'line', 'points'])
 
-ws = int(float(0.5 * 60000) / milliseconds_per_instance)
+ws = int(float(0.5 * 60000)/milliseconds_per_instance)
 selected_predictor_cols = [c for c in dataset.columns if not 'label' in c]
 dataset = NumAbs.abstract_numerical(dataset, selected_predictor_cols, ws, 'mean')
 dataset = NumAbs.abstract_numerical(dataset, selected_predictor_cols, ws, 'std')
 
 CatAbs = CategoricalAbstraction()
-dataset = CatAbs.abstract_categorical(dataset, ['label'], ['like'], 0.03,
-                                      int(float(5 * 60000) / milliseconds_per_instance), 2)
+dataset = CatAbs.abstract_categorical(dataset, ['label'], ['like'], 0.03,int(float(5*60000)/milliseconds_per_instance), 2)
 
 # Now we move to the frequency domain, with the same window size.
 

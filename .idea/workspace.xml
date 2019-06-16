@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="e1f45f46-2a46-40ae-ba0f-5b8ca7c1e80a" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/PythonCode/crowdsignals_ch8_regression_our.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/ML4QS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ML4QS.iml" afterDir="false" />
@@ -31,6 +32,9 @@
       <change beforePath="$PROJECT_DIR$/output/250ms_sound.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/250ms_sound.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/Create_dataset_group70.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Create_dataset_group70.py" afterDir="false" />
     </list>
+=======
+    <list default="true" id="e1f45f46-2a46-40ae-ba0f-5b8ca7c1e80a" name="Default Changelist" comment="" />
+>>>>>>> master
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,16 +102,26 @@
     </session>
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch3_rest_our.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
               <caret line="31" selection-start-line="31" selection-end-line="31" />
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PythonCode/Chapter8/LearningAlgorithmsTemporal.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="46" column="77" lean-forward="true" selection-start-line="46" selection-start-column="77" selection-end-line="46" selection-end-column="77" />
+>>>>>>> master
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch4_our.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -153,6 +167,13 @@
               <folding>
                 <element signature="e#505#555#0" expanded="true" />
               </folding>
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch8_regression.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="178" selection-start-line="178" selection-end-line="178" />
+>>>>>>> master
             </state>
           </provider>
         </entry>
@@ -176,6 +197,7 @@
       <list>
         <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch5_our.py" />
         <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch7_classification_our_Data.py" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch4_our.py" />
         <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch2.py" />
         <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch4.py" />
@@ -185,6 +207,12 @@
         <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch3_rest.py" />
         <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch3_outliers_our.py" />
         <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch8_regression_our.py" />
+=======
+        <option value="$PROJECT_DIR$/scripts/Create_dataset_group70.py" />
+        <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch2.py" />
+        <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch4_our.py" />
+        <option value="$PROJECT_DIR$/PythonCode/crowdsignals_ch8_regression.py" />
+>>>>>>> master
       </list>
     </option>
   </component>
@@ -222,7 +250,11 @@
               <item name="ML4QS" type="b2602c69:ProjectViewProjectNode" />
               <item name="ML4QS" type="462c0819:PsiDirectoryNode" />
               <item name="PythonCode" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="intermediate_datafiles" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="Chapter8" type="462c0819:PsiDirectoryNode" />
+>>>>>>> master
             </path>
             <path>
               <item name="ML4QS" type="b2602c69:ProjectViewProjectNode" />
@@ -260,8 +292,13 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Python.crowdsignals_ch8_regression_our">
     <configuration name="crowdsignals_ch3_rest_our" type="PythonConfigurationType" factoryName="Python" temporary="true">
+=======
+  <component name="RunManager" selected="Python.crowdsignals_ch8_regression">
+    <configuration name="Create_dataset_group70" type="PythonConfigurationType" factoryName="Python" temporary="true">
+>>>>>>> master
       <module name="ML4QS" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -317,7 +354,10 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+<<<<<<< HEAD
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+=======
+>>>>>>> master
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonCode/crowdsignals_ch5_our.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -339,7 +379,10 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+<<<<<<< HEAD
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+=======
+>>>>>>> master
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonCode/crowdsignals_ch7_classification_our_Data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -349,7 +392,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+<<<<<<< HEAD
     <configuration name="crowdsignals_ch8_regression_our" type="PythonConfigurationType" factoryName="Python" temporary="true">
+=======
+    <configuration name="crowdsignals_ch8_regression" type="PythonConfigurationType" factoryName="Python" temporary="true">
+>>>>>>> master
       <module name="ML4QS" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -361,8 +408,12 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+<<<<<<< HEAD
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonCode/crowdsignals_ch8_regression_our.py" />
+=======
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonCode/crowdsignals_ch8_regression.py" />
+>>>>>>> master
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -372,7 +423,9 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.Create_dataset_group70" />
       <item itemvalue="Python.crowdsignals_ch4_our" />
+<<<<<<< HEAD
       <item itemvalue="Python.crowdsignals_ch3_rest_our" />
       <item itemvalue="Python.crowdsignals_ch5_our" />
       <item itemvalue="Python.crowdsignals_ch7_classification_our_Data" />
@@ -385,6 +438,19 @@
         <item itemvalue="Python.crowdsignals_ch5_our" />
         <item itemvalue="Python.crowdsignals_ch4_our" />
         <item itemvalue="Python.crowdsignals_ch3_rest_our" />
+=======
+      <item itemvalue="Python.crowdsignals_ch5_our" />
+      <item itemvalue="Python.crowdsignals_ch7_classification_our_Data" />
+      <item itemvalue="Python.crowdsignals_ch8_regression" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.crowdsignals_ch8_regression" />
+        <item itemvalue="Python.crowdsignals_ch4_our" />
+        <item itemvalue="Python.Create_dataset_group70" />
+        <item itemvalue="Python.crowdsignals_ch7_classification_our_Data" />
+        <item itemvalue="Python.crowdsignals_ch5_our" />
+>>>>>>> master
       </list>
     </recent_temporary>
   </component>
@@ -413,12 +479,20 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
     <layout>
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18473895" />
+=======
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29840922" />
+>>>>>>> master
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32348806" />
+=======
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32463464" />
+>>>>>>> master
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -463,22 +537,31 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/intermediate_datafiles/processed_data.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/intermediate_datafiles/owndata_result.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-396" />
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/intermediate_datafiles/owndata.csv">
       <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/PythonCode/intermediate_datafiles/Data_processed_timestamps.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+>>>>>>> master
     <entry file="file://$PROJECT_DIR$/PythonCode/Chapter2/CreateDataset.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
@@ -488,16 +571,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/processed_data_.csv" />
     <entry file="file://$PROJECT_DIR$/data/processed_data_2.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/intermediate_datafiles/processed_data_2.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch5.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -537,10 +620,10 @@
     </entry>
     <entry file="file://$USER_HOME$/.local/lib/python2.7/site-packages/sklearn/ensemble/weight_boosting.py" />
     <entry file="file://$PROJECT_DIR$/PythonCode/intermediate_datafiles/chapter4_our_result.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/Create_dataset.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -561,6 +644,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch4.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
@@ -568,17 +652,19 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> master
     <entry file="file://$PROJECT_DIR$/PythonCode/intermediate_datafiles/chapter3_our_result_final.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/intermediate_datafiles/chapter3_our_result_outliers.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonCode/intermediate_datafiles/chapter3_result_outliers.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
@@ -684,6 +770,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch7_classification_our_Data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -703,6 +790,33 @@
           <folding>
             <element signature="e#505#555#0" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="87" column="2" selection-start-line="87" selection-start-column="2" selection-end-line="87" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch4_our.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/Chapter8/LearningAlgorithmsTemporal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="46" column="77" lean-forward="true" selection-start-line="46" selection-start-column="77" selection-end-line="46" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCode/crowdsignals_ch8_regression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="178" selection-start-line="178" selection-end-line="178" />
+>>>>>>> master
         </state>
       </provider>
     </entry>

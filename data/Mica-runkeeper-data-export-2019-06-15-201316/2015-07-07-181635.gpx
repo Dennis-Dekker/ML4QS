@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx
+  version="1.1"
+  creator="Runkeeper - http://www.runkeeper.com"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.topografix.com/GPX/1/1"
+  xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"
+  xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+<trk>
+  <name><![CDATA[Running 7/7/15 6:16 pm]]></name>
+  <time>2015-07-07T16:16:35Z</time>
+<trkseg>
+<trkpt lat="52.365299000" lon="4.948907000"><ele>59.1</ele><time>2015-07-07T16:16:35Z</time></trkpt>
+<trkpt lat="52.365299000" lon="4.948907000"><ele>59.1</ele><time>2015-07-07T16:16:43Z</time></trkpt>
+</trkseg>
+</trk>
+</gpx>
