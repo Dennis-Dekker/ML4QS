@@ -39,6 +39,7 @@ def main():
         m_data, gps_data = load_data(folder, measurement_file, gps_file)
         print(m_data.head())
         print(gps_data.head())
+        print(measurement_file)
         break
 
 
