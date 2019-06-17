@@ -29,8 +29,8 @@ def load_data(folder, gps_file):
     gpx = doc.documentElement
     for node in gpx.getElementsByTagName("trk"):
         tracks = parseTrack(node)
-    print(tracks)
-    gps_data = pd.DataFrame(tracks, columns=["lat", "lon", "ele", "time", "hr"])
+
+    gps_data = pd.DataFrame(tracks, columns=["time","lat", "lon", "ele", "hr"])
 
     return gps_data
 
@@ -50,10 +50,15 @@ def main():
 
     gps_file_names = load_location_files(folder)
 
-    for gps_file in gps_file_names:
+    gps_data_all = pd.DataFrame(columns=["time","lat", "lon", "ele", "hr"])
+
+    for gps_file in sorted(gps_file_names):
         gps_data = load_data(folder, gps_file)
-        print(gps_data.head())
-        break
+        print(gps_data.shape)
+        gps_data_all = gps_data_all.append(gps_data)
+    print(gps_data_all.shape)
+
+    gps_data_all.to_csv("all_data_Mica.csv",index=False)
 
 
 if __name__ == '__main__':
