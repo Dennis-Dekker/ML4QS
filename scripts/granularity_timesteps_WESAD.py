@@ -30,10 +30,7 @@ def granulize(data, granularity):
             print(i)
 
         for col in empty_dataset.columns:
-            if len(relevant_rows) > 0:
-                empty_dataset.loc[empty_dataset.index[i], col] = np.nanmean(relevant_rows[col])
-            else:
-                raise ValueError("No relevant rows.")
+            empty_dataset.loc[empty_dataset.index[i], col] = np.nanmean(relevant_rows[col])
 
     return empty_dataset
 
