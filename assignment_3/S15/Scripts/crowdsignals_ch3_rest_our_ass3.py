@@ -69,7 +69,7 @@ DataViz.plot_dataset(new_dataset.ix[int(0.4 * len(new_dataset.index)):int(0.43 *
                      ['hr', 'hr_lowpass'], ['exact', 'exact'], ['line', 'line'])
 
 # And not let us include all measurements that have a form of periodicity (and filter them):
-periodic_measurements = ['acc_x', 'acc_y', 'acc_z']
+periodic_measurements = ['acc_x', 'acc_y', 'acc_z', 'hr', 'eda', 'temp', 'bvp']
 
 for col in periodic_measurements:
     dataset = LowPass.low_pass_filter(dataset, col, fs, cutoff, order=10)
@@ -98,13 +98,13 @@ dataset = PCA.apply_pca(copy.deepcopy(dataset), selected_predictor_cols, n_pcs)
 
 # And we visualize the result of the PC's
 
-DataViz.plot_dataset(dataset, ['pca_', 'label'], ['like', 'like'], ['line', 'points'])
+DataViz.plot_dataset(dataset, ['pca_', 'hr'], ['like', 'like'], ['line', 'line'])
 
 # And the overall final dataset:
 
-DataViz.plot_dataset(dataset, ["acc_", 'pca_', 'label'],
-                     ['like', 'like', 'like'],
-                     ['line', 'line', 'points'])
+DataViz.plot_dataset(dataset, ["acc_", 'hr', 'temp', 'eda', 'bvp' 'pca_'],
+                     ['like', 'like', 'like', 'like', 'like', 'like'],
+                     ['line', 'line', 'line', 'line', 'line', 'line'])
 
 # Store the outcome.
 
