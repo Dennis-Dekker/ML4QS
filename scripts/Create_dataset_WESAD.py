@@ -67,7 +67,7 @@ def read_data(path):
     ACC_data = pd.read_csv(path + "ACC.csv", skiprows=2, names=["acc_x", "acc_y", "acc_z"])
     ACC_data["time"] = np.nan
     for i in range(0, len(ACC_data.index)):
-        ACC_data.time[i] = i * (1. / 32)
+        ACC_data.at[ACC_data.index[i], "time"] = i * (1. / 32)
     ACC_data = granulize(ACC_data, 0.1)
     print("ACC done")
 
@@ -85,10 +85,18 @@ def read_data(path):
     TEMP_data = granulize(TEMP_data, 0.1)
     print("TEMP done")
 
-    data = pd.merge(BVP_data,HR_data, how="left", on="time")
-    data = pd.merge(data, ACC_data, how="left", on="time")
-    data = pd.merge(data, EDA_data, how="left", on="time")
-    data = pd.merge(data, TEMP_data, how="left", on="time")
+    # data1 = pd.merge(BVP_data, HR_data, on="time", how="left")
+    # data2 = pd.merge(data1, ACC_data, on="time", how="left")
+    # data3 = pd.merge(data2, EDA_data, on="time", how="left")
+    # data = pd.merge(data3, TEMP_data, on="time", how="left")
+
+    data1 = pd.merge(BVP_data, HR_data, right_index=True)
+    data2 = pd.merge(data1, ACC_data, right_index=True)
+    data3 = pd.merge(data2, EDA_data, right_index=True)
+    data = pd.merge(data3, TEMP_data, right_index=True)
+
+
+
 
     return data
 
