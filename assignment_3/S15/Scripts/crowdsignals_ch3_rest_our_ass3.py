@@ -21,7 +21,7 @@ import matplotlib.pyplot as plot
 DataViz = VisualizeDataset()
 
 # Read the result from the previous chapter, and make sure the index is of the type datetime.
-dataset_path = './intermediate_datafiles/'
+dataset_path = '../Data/'
 dataset = pd.read_csv(dataset_path + 'assignment3_our_result_outliers.csv', index_col=0)
 dataset.index = dataset.index.to_datetime()
 
