@@ -73,7 +73,7 @@ def create_dataset(df_raw, delta_t, labels):
 
         for col in empty_dataset.columns:
             if len(relevant_rows) > 0:
-                empty_dataset.loc[empty_dataset.index[i], col] = np.average(relevant_rows[col])
+                empty_dataset.loc[empty_dataset.index[i], col] = np.nanmean(relevant_rows[col])
             else:
                 raise ValueError("No relevant rows.")
 
