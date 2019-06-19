@@ -39,8 +39,8 @@ def read_data(path):
     for i in range(0, len(TEMP_data.index)):
         TEMP_data.time[i] = i * (1 / 4)
 
-    data = pd.merge(BVP_data,HR_data, how= "left", on="time")
-    data = pd.merge(data, ACC_data, how= "left", on="time")
+    data = pd.merge(BVP_data,HR_data, how="left", on="time")
+    data = pd.merge(data, ACC_data, how="left", on="time")
     data = pd.merge(data, EDA_data, how="left", on="time")
     data = pd.merge(data, TEMP_data, how="left", on="time")
 
