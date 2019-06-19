@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="093d2ebc-0471-4cf8-bbda-059da78f3d39" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/assignment_3/S15/Scripts/crowdsignals_ch3_outliers_our_ass3.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_3/S15/Scripts/crowdsignals_ch3_outliers_our_ass3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ML4QS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ML4QS.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/S15/Scripts/crowdsignals_ch3_rest_our_ass3.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_3/S15/Scripts/crowdsignals_ch3_rest_our_ass3.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,6 +16,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/ML4QS$Create_datasets_Mica.coverage" NAME="Create_datasets_Mica Coverage Results" MODIFIED="1560847471319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/ML4QS$Create_dataset_WESAD.coverage" NAME="Create_dataset_WESAD Coverage Results" MODIFIED="1560865777288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/ML4QS$crowdsignals_ch3_rest_our_ass3.coverage" NAME="crowdsignals_ch3_rest_our_ass3 Coverage Results" MODIFIED="1560939891626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assignment_3/S15/Scripts" />
     <SUITE FILE_PATH="coverage/ML4QS$crowdsignals_ch3_outliers_our_ass3.coverage" NAME="crowdsignals_ch3_outliers_our_ass3 Coverage Results" MODIFIED="1560937611543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assignment_3/S15/Scripts" />
   </component>
   <component name="FUSProjectUsageTrigger">
@@ -44,13 +48,13 @@
         <counts>
           <entry key="Python Console" value="45" />
           <entry key="dummy" value="17" />
-          <entry key="py" value="1641" />
+          <entry key="py" value="1724" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="17" />
-          <entry key="Python" value="1686" />
+          <entry key="Python" value="1769" />
         </counts>
       </usages-collector>
     </session>
@@ -60,8 +64,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assignment_3/S15/Scripts/crowdsignals_ch3_rest_our_ass3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="71" column="50" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
+            <state relative-caret-position="412">
+              <caret line="104" column="21" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -80,9 +84,7 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignment_3/S15/Data/assignment3_our_result_outliers.csv">
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="-85" />
-          </provider>
+          <provider selected="true" editor-type-id="csv-text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -130,8 +132,8 @@
         <option value="$PROJECT_DIR$/scripts/Create_datasets_Mica.py" />
         <option value="$PROJECT_DIR$/scripts/Create_dataset_WESAD.py" />
         <option value="$PROJECT_DIR$/assignment_3/crowdsignals_ch3_outliers_our_ass3.py" />
-        <option value="$PROJECT_DIR$/assignment_3/S15/Scripts/crowdsignals_ch3_rest_our_ass3.py" />
         <option value="$PROJECT_DIR$/assignment_3/S15/Scripts/crowdsignals_ch3_outliers_our_ass3.py" />
+        <option value="$PROJECT_DIR$/assignment_3/S15/Scripts/crowdsignals_ch3_rest_our_ass3.py" />
       </list>
     </option>
   </component>
@@ -203,7 +205,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="database.main" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -331,7 +333,7 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/assignment_3/S15/Scripts/crowdsignals_ch3_rest_our_ass3.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -377,14 +379,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25970548" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32911393" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986613" visible="true" weight="0.32911393" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49799198" visible="true" weight="0.32911393" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3994374" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -393,8 +394,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32911393" />
-      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.49933067" weight="0.32911393" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50133866" side_tool="true" weight="0.32911393" />
+      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.77576977" weight="0.32911393" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.22423026" side_tool="true" weight="0.32911393" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -510,9 +511,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment_3/S15/Data/assignment3_our_result_outliers.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-85" />
-      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment_3/S15/Scripts/crowdsignals_ch3_outliers_our_ass3.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -526,8 +525,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment_3/S15/Scripts/crowdsignals_ch3_rest_our_ass3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="71" column="50" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
+        <state relative-caret-position="412">
+          <caret line="104" column="21" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
         </state>
       </provider>
     </entry>

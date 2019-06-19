@@ -102,7 +102,9 @@ DataViz.plot_dataset(dataset, ['pca_', 'hr'], ['like', 'like'], ['line', 'line']
 
 # And the overall final dataset:
 
-DataViz.plot_dataset(dataset, ["acc_", 'hr', 'temp', 'eda', 'bvp' 'pca_'],
+print dataset.columns
+
+DataViz.plot_dataset(dataset, ['acc_', 'hr', 'temp', 'eda', 'bvp' 'pca_'],
                      ['like', 'like', 'like', 'like', 'like', 'like'],
                      ['line', 'line', 'line', 'line', 'line', 'line'])
 
