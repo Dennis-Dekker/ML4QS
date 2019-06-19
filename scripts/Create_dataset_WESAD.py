@@ -50,8 +50,10 @@ def load_location_files(path):
 def read_data(path):
     BVP_data = pd.read_csv(path + "BVP.csv", skiprows=2, names=["bvp"])
     BVP_data["time"] = np.nan
+    print(BVP_data.head())
     for i in range(0, len(BVP_data.index)):
-        BVP_data.time[i] = i * (1 / 64)
+        BVP_data.time[i] = i * (float(1. / 64))
+    print(BVP_data.head())
     BVP_data = granulize(BVP_data, 0.1)
     print("BVP done")
 
@@ -65,21 +67,21 @@ def read_data(path):
     ACC_data = pd.read_csv(path + "ACC.csv", skiprows=2, names=["acc_x", "acc_y", "acc_z"])
     ACC_data["time"] = np.nan
     for i in range(0, len(ACC_data.index)):
-        ACC_data.time[i] = i * (1 / 32)
+        ACC_data.time[i] = i * (1. / 32)
     ACC_data = granulize(ACC_data, 0.1)
     print("ACC done")
 
     EDA_data = pd.read_csv(path + "EDA.csv", skiprows=2, names=["eda"])
     EDA_data["time"] = np.nan
     for i in range(0, len(EDA_data.index)):
-        EDA_data.time[i] = i * (1 / 4)
+        EDA_data.time[i] = i * (1. / 4)
     EDA_data = granulize(EDA_data, 0.1)
     print("EDA done")
 
     TEMP_data = pd.read_csv(path + "TEMP.csv", skiprows=2, names=["temp"])
     TEMP_data["time"] = np.nan
     for i in range(0, len(TEMP_data.index)):
-        TEMP_data.time[i] = i * (1 / 4)
+        TEMP_data.time[i] = i * (1. / 4)
     TEMP_data = granulize(TEMP_data, 0.1)
     print("TEMP done")
 
