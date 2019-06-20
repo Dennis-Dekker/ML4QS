@@ -20,7 +20,7 @@ DataViz = VisualizeDataset()
 # Read the result from the previous chapter, and make sture the index is of the type datetime.
 dataset_path = '../Data/'
 try:
-    dataset = pd.read_csv(dataset_path + 'Data_processed_timestamps_ass3.csv', index_col=0)
+    dataset = pd.read_csv(dataset_path + 'merged_data_fixed.csv', index_col=0)
 except IOError as e:
     print('File not found, try to run previous crowdsignals scripts first!')
     raise e
@@ -35,7 +35,7 @@ print(dataset.index[1])
 # Step 1: Let us see whether we have some outliers we would prefer to remove.
 
 # Determine the columns we want to experiment on.
-outlier_columns = ['hr', 'acc_x', 'bvp', 'eda', 'temp']
+outlier_columns = ['hr', 'acc_x', 'acc_y', 'acc_z', 'bvp', 'eda', 'temp']
 
 # Create the outlier classes.
 OutlierDistr = DistributionBasedOutlierDetection()
