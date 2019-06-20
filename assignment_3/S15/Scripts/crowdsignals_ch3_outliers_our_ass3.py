@@ -25,6 +25,8 @@ except IOError as e:
     print('File not found, try to run previous crowdsignals scripts first!')
     raise e
 
+dataset = dataset.drop("time", axis = 1)
+
 dataset.index = dataset.index.to_datetime()
 
 # Compute the number of milliseconds covered by an instance based on the first two rows
