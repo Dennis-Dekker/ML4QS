@@ -78,8 +78,8 @@ for col in outlier_columns:
 
 for col in [c for c in dataset.columns if not 'label' in c]:
     print 'Measurement is now: ' , col
-    dataset = OutlierDistr.chauvenet(dataset, col)
-    dataset.loc[dataset[col + '_outlier'] == True, col] = np.nan
-    del dataset[col + '_outlier']
+    dataset = OutlierDistr.mixture_model(dataset, col)
+    dataset.loc[dataset[col + '_mixture'] == True, col] = np.nan
+    del dataset[col + '_mixture']
 
 dataset.to_csv(dataset_path + 'assignment3_our_result_outliers.csv')
