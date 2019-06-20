@@ -19,7 +19,7 @@ import pandas as pd
 DataViz = VisualizeDataset()
 
 # Read the result from the previous chapter, and make sure the index is of the type datetime.
-dataset_path = './intermediate_datafiles/'
+dataset_path = '../Data/'
 try:
     dataset = pd.read_csv(dataset_path + 'chapter3_our_result_final.csv', index_col=0)
 except IOError as e:
@@ -41,32 +41,31 @@ window_sizes = [int(float(5000)/milliseconds_per_instance), int(float(0.5*60000)
 NumAbs = NumericalAbstraction()
 dataset_copy = copy.deepcopy(dataset)
 for ws in window_sizes:
-    dataset_copy = NumAbs.abstract_numerical(dataset_copy, ['ax'], ws, 'mean')
-    dataset_copy = NumAbs.abstract_numerical(dataset_copy, ['ax'], ws, 'std')
+    dataset_copy = NumAbs.abstract_numerical(dataset_copy, ['acc_x'], ws, 'mean')
+    dataset_copy = NumAbs.abstract_numerical(dataset_copy, ['acc_x'], ws, 'std')
 
-DataViz.plot_dataset(dataset_copy, ['ax', 'ax_temp_mean', 'ax_temp_std', 'label'], ['exact', 'like', 'like', 'like'],['line', 'line', 'line', 'points'])
+DataViz.plot_dataset(dataset_copy, ['acc_x', 'acc_x_temp_mean', 'acc_x_temp_std'], ['exact', 'like', 'like'],['line', 'line', 'line'])
 
 ws = int(float(0.5 * 60000)/milliseconds_per_instance)
 selected_predictor_cols = [c for c in dataset.columns if not 'label' in c]
 dataset = NumAbs.abstract_numerical(dataset, selected_predictor_cols, ws, 'mean')
 dataset = NumAbs.abstract_numerical(dataset, selected_predictor_cols, ws, 'std')
 
-CatAbs = CategoricalAbstraction()
-dataset = CatAbs.abstract_categorical(dataset, ['label'], ['like'], 0.03,int(float(5*60000)/milliseconds_per_instance), 2)
+# CatAbs = CategoricalAbstraction()
+# dataset = CatAbs.abstract_categorical(dataset, ['label'], ['like'], 0.03,int(float(5*60000)/milliseconds_per_instance), 2)
 
 # Now we move to the frequency domain, with the same window size.
 
 FreqAbs = FourierTransformation()
 fs = float(1000) / milliseconds_per_instance
 
-periodic_predictor_cols = ['gFx', 'gFy', 'gFz', 'ax', 'ay', 'az', 'wx', 'wy', 'wz', 'p', 'Bx', 'By', 'Bz', 'Azimuth',
-                           'Pitch', 'Roll', 'Gain']
-data_table = FreqAbs.abstract_frequency(copy.deepcopy(dataset), ['ax'], int(float(10000) / milliseconds_per_instance),fs)
+periodic_predictor_cols = ['acc_x', 'acc_y', 'acc_z', 'hr', 'eda', 'temp', 'bvp']
+data_table = FreqAbs.abstract_frequency(copy.deepcopy(dataset), ['acc_x'], int(float(10000) / milliseconds_per_instance),fs)
 
 # Spectral analysis.
 
-DataViz.plot_dataset(data_table, ['ax_max_freq', 'ax_freq_weighted', 'ax_pse', 'label'],
-                     ['like', 'like', 'like', 'like'], ['line', 'line', 'line', 'points'])
+DataViz.plot_dataset(data_table, ['acc_x_max_freq', 'acc_x_freq_weighted', 'acc_x_pse'],
+                     ['like', 'like', 'like'], ['line', 'line', 'line'])
 
 dataset = FreqAbs.abstract_frequency(dataset, periodic_predictor_cols, int(float(10000) / milliseconds_per_instance),fs)
 
@@ -79,6 +78,6 @@ dataset = dataset.iloc[::skip_points, :]
 
 dataset.to_csv(dataset_path + 'chapter4_our_result.csv')
 
-DataViz.plot_dataset(dataset, ['gF', 'a', 'w', 'p', 'B', 'Azimuth', 'Pitch', 'Roll', 'Gain', 'pca_', 'label'],
-                     ['like', 'like', 'like', 'like', 'like', 'like', 'like', 'like', 'like', 'like', 'like'],
-                     ['line', 'line', 'line', 'line', 'line', 'line', 'line', 'line', 'line', 'line', 'points'])
+DataViz.plot_dataset(dataset, ['acc_x', 'acc_y', 'acc_z', 'hr', 'eda', 'temp', 'bvp'],
+                     ['like', 'like', 'like', 'like', 'like', 'like', 'like'],
+                     ['line', 'line', 'line', 'line', 'line', 'line', 'line'])
