@@ -60,7 +60,7 @@ def read_data(path):
     HR_data = pd.read_csv(path + "HR.csv", skiprows=2, names=["hr"])
     HR_data["time"] = np.nan
     for i in range(0, len(HR_data.index)):
-        HR_data.time[i] = i
+        HR_data.time[i] = "%.9f" % float(i)
     HR_data = granulize(HR_data, 0.1)
     print("HR done")
 
@@ -85,15 +85,11 @@ def read_data(path):
     TEMP_data = granulize(TEMP_data, 0.1)
     print("TEMP done")
 
-    # data1 = pd.merge(BVP_data, HR_data, on="time", how="left")
-    # data2 = pd.merge(data1, ACC_data, on="time", how="left")
-    # data3 = pd.merge(data2, EDA_data, on="time", how="left")
-    # data = pd.merge(data3, TEMP_data, on="time", how="left")
+    data1 = pd.merge(BVP_data, HR_data, on="time", how="left")
+    data2 = pd.merge(data1, ACC_data, on="time", how="left")
+    data3 = pd.merge(data2, EDA_data, on="time", how="left")
+    data = pd.merge(data3, TEMP_data, on="time", how="left")
 
-    data1 = pd.merge(BVP_data, HR_data, right_index=True)
-    data2 = pd.merge(data1, ACC_data, right_index=True)
-    data3 = pd.merge(data2, EDA_data, right_index=True)
-    data = pd.merge(data3, TEMP_data, right_index=True)
 
 
 
@@ -108,7 +104,7 @@ def main():
 
     print(data.head(130))
 
-    data.to_csv("merged_data.csv", index_label="time")
+    data.to_csv("merged_data_Martin.csv", index_label="time")
 
 
 
