@@ -351,7 +351,7 @@ class VisualizeDataset:
             plot.errorbar(ind + i * width, means, yerr=std, fmt=self.colors[i%len(self.colors)] + 'o', markersize='3')
         plot.ylabel(y_name)
         plot.xticks(ind+(float(len(feature_subset_names))/2)*width, algs)
-        plot.legend(feature_subset_names, loc=4, numpoints=1)
+        plot.legend(feature_subset_names, bbox_to_anchor=(1.04,1), loc=4, numpoints=1)
         if not ylim is None:
             plot.ylim(ylim)
         # plot.tight_layout()

@@ -28,7 +28,7 @@ from sklearn.model_selection import train_test_split
 DataViz = VisualizeDataset()
 
 # Read the result from the previous chapter, and make sure the index is of the type datetime.
-dataset_path = './intermediate_datafiles/'
+dataset_path = '../Data/'
 
 try:
     dataset = pd.read_csv(dataset_path + 'chapter5_our_result.csv', index_col=0)
@@ -70,19 +70,19 @@ features_after_chapter_3 = list(set().union(basic_features, pca_features))
 features_after_chapter_4 = list(set().union(basic_features, pca_features, time_features, freq_features))
 features_after_chapter_5 = list(set().union(basic_features, pca_features, time_features, freq_features, cluster_features))
 
-selected_features = ['az_freq_0.0_Hz_ws_40', 'Bz_freq_0.4_Hz_ws_40', 'Bx_freq_weighted',
-                     'pca_7_temp_std_ws_120', 'gFx_freq_0.1_Hz_ws_40',
-                     'gFy_freq_2.0_Hz_ws_40', 'ay_freq_1.9_Hz_ws_40',
-                     'wx_freq_1.5_Hz_ws_40']
+
+selected_features =['eda_temp_std_ws_300', 'eda_freq_0.0_Hz_ws_100', 'eda_temp_mean_ws_300',
+                    'eda', 'acc_y_temp_std_ws_300', 'pca_4_temp_std_ws_300', 'acc_x_temp_std_ws_300', 'pca_1_temp_std_ws_300',
+                    'bvp_pse']
 possible_feature_sets = [basic_features, features_after_chapter_3, features_after_chapter_4, features_after_chapter_5, selected_features]
 feature_names = ['initial set', 'Chapter 3', 'Chapter 4', 'Chapter 5', 'Selected features']
 
 # Let us first study whether the time series is stationary and what the autocorrelations are.
 
-dftest = adfuller(dataset['Azimuth'], autolag='AIC')
+dftest = adfuller(dataset['hr'], autolag='AIC')
 print dftest
 
-autocorrelation_plot(dataset['Azimuth'])
+autocorrelation_plot(dataset['hr'])
 plot.show()
 
 # Now let us focus on the learning part.
@@ -175,8 +175,10 @@ for i in range(0, len(possible_feature_sets)):
 DataViz.plot_performances_regression(['Reservoir', 'RNN', 'Time series'], feature_names, scores_over_all_algs)
 
 regr_train_y, regr_test_y = learner.reservoir_computing(train_X[features_after_chapter_5], train_y, test_X[features_after_chapter_5], test_y, gridsearch=True)
-DataViz.plot_numerical_prediction_versus_real(train_X.index, train_y, regr_train_y['Azimuth'], test_X.index, test_y, regr_test_y['Azimuth'], 'Azimuth')
+DataViz.plot_numerical_prediction_versus_real(train_X.index, train_y, regr_train_y['hr'], test_X.index, test_y, regr_test_y['hr'], 'hr')
+
 regr_train_y, regr_test_y = learner.recurrent_neural_network(train_X[basic_features], train_y, test_X[basic_features], test_y, gridsearch=True)
-DataViz.plot_numerical_prediction_versus_real(train_X.index, train_y, regr_train_y['Azimuth'], test_X.index, test_y, regr_test_y['Azimuth'], 'Azimuth')
+DataViz.plot_numerical_prediction_versus_real(train_X.index, train_y, regr_train_y['hr'], test_X.index, test_y, regr_test_y['hr'], 'hr')
+
 regr_train_y, regr_test_y = learner.time_series(train_X[basic_features], train_y, test_X[features_after_chapter_5], test_y, gridsearch=True)
-DataViz.plot_numerical_prediction_versus_real(train_X.index, train_y, regr_train_y['Azimuth'], test_X.index, test_y, regr_test_y['Azimuth'], 'Azimuth')
+DataViz.plot_numerical_prediction_versus_real(train_X.index, train_y, regr_train_y['hr'], test_X.index, test_y, regr_test_y['hr'], 'hr')

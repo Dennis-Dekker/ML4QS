@@ -85,7 +85,7 @@ util.print_pearson_correlations(correlations)
 sorted_10_correlation = sorted(correlations, key=lambda x: x[1], reverse=True)[:10]
 
 selected_features = [item[0] for item in sorted_10_correlation]
-
+print '#selected_features:', selected_features
 possible_feature_sets = [basic_features, features_after_chapter_3, features_after_chapter_4, features_after_chapter_5,
                          selected_features]
 feature_names = ['initial set', 'Chapter 3', 'Chapter 4', 'Chapter 5', 'Selected features']
@@ -193,8 +193,10 @@ for i in range(0, len(possible_feature_sets)):
 print scores_over_all_algs
 DataViz.plot_performances_regression(['NN', 'RF', 'SVM', 'KNN', 'DT'], feature_names, scores_over_all_algs)
 
-regr_train_y, regr_test_y = learner.random_forest(train_X[features_after_chapter_5], train_y,
+#regr_train_y, regr_test_y = learner.random_forest(train_X[features_after_chapter_5], train_y,
+regr_train_y, regr_test_y  = learner.decision_tree(train_X[features_after_chapter_5], train_y,
                                                   test_X[features_after_chapter_5], gridsearch=True,
                                                   print_model_details=True)
+
 DataViz.plot_numerical_prediction_versus_real(train_X.index, train_y, regr_train_y, test_X.index, test_y, regr_test_y,
                                               'heart rate')
