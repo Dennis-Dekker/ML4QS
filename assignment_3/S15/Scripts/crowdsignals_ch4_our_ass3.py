@@ -31,6 +31,11 @@ dataset.index = dataset.index.to_datetime()
 # Compute the number of milliseconds covered by an instane based on the first two rows
 milliseconds_per_instance = (dataset.index[1] - dataset.index[0]).microseconds / 1000
 
+print dataset.index[1]
+print (dataset.index[1] - dataset.index[0]).microseconds
+print (dataset.index[1] - dataset.index[0]).microseconds / 1000
+print milliseconds_per_instance
+
 # Chapter 4: Identifying aggregate attributes.
 
 # First we focus on the time domain.

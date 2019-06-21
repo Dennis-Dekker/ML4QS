@@ -35,6 +35,7 @@ class FourierTransformation:
             data_table[col + '_freq_weighted'] = np.nan
             data_table[col + '_pse'] = np.nan
             for freq in freqs:
+                print freq
                 data_table[col + '_freq_' + str(round(freq,1)) + '_Hz_ws_' + str(window_size)] = np.nan
 
         # Pass over the dataset (we cannot compute it when we do not have enough history)
