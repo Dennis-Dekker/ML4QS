@@ -39,6 +39,9 @@ except IOError as e:
 dataset = pd.read_csv(dataset_path + 'chapter5_our_result.csv', index_col=0)
 dataset.index = dataset.index.to_datetime()
 
+print dataset.isnull().sum()
+
+
 if not os.path.exists(export_tree_path):
     os.makedirs(export_tree_path)
 
@@ -46,17 +49,17 @@ if not os.path.exists(export_tree_path):
 
 prepare = PrepareDatasetForLearning()
 
-train_X, test_X, train_y, test_y = prepare.split_single_dataset_regression_by_time(dataset, 'hr', '2016-06-14 12:06:00',
-                                                                                   '2016-06-14 13:20:00',
-                                                                                   '2016-06-14 13:56:00')
-# '2016-02-08 18:28:58','2016-02-08 18:28:59')
+train_X, test_X, train_y, test_y = prepare.split_single_dataset_regression_by_time(dataset, 'hr', '2019-06-14 12:06:35',
+                                                                                   '2019-06-14 13:20:00',
+                                                                                   '2019-06-14 13:56:00')
+# '2019-02-08 18:28:58','2019-02-08 18:28:59')
 
 print 'Training set length is: ', len(train_X.index)
 print 'Test set length is: ', len(test_X.index)
 
 # Select subsets of the features that we will consider:
 
-basic_features = ['acc_x', 'acc_y', 'acc_z', 'hr', 'eda', 'temp', 'bvp']
+basic_features = ['acc_x', 'acc_y', 'acc_z', 'eda', 'temp', 'bvp']
 pca_features = ['pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5']
 time_features = [name for name in dataset.columns if ('temp_' in name and not 'hr' in name)]
 freq_features = [name for name in dataset.columns if (('_freq' in name) or ('_pse' in name))]
@@ -79,10 +82,9 @@ util.print_pearson_correlations(correlations)
 
 # We select the 10 features with the highest correlation.
 
-selected_features = ['temp_pattern_labelOnTable', 'labelOnTable', 'temp_pattern_labelOnTable(b)labelOnTable',
-                     'pca_2_temp_mean_ws_120',
-                     'pca_1_temp_mean_ws_120', 'acc_watch_y_temp_mean_ws_120', 'pca_2', 'acc_phone_z_temp_mean_ws_120',
-                     'gyr_watch_y_pse', 'gyr_watch_x_pse']
+sorted_10_correlation = sorted(correlations, key=lambda x: x[1], reverse=True)[:10]
+
+selected_features = [item[0] for item in sorted_10_correlation]
 
 possible_feature_sets = [basic_features, features_after_chapter_3, features_after_chapter_4, features_after_chapter_5,
                          selected_features]

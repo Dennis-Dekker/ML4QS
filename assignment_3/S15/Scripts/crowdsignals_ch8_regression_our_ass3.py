@@ -42,9 +42,9 @@ dataset.index = dataset.index.to_datetime()
 
 prepare = PrepareDatasetForLearning()
 
-train_X, test_X, train_y, test_y = prepare.split_single_dataset_regression_by_time(dataset, 'Azimuth', '2019-06-14 12:06:30',
-#                                                                                   '2016-02-08 18:29:58','2016-02-08 18:29:59')
-                                                                                   '2019-06-14 12:16:02', '2019-06-14 12:20:56')
+train_X, test_X, train_y, test_y = prepare.split_single_dataset_regression_by_time(dataset, 'hr', '2019-06-14 12:06:35',
+                                                                                   '2019-06-14 13:20:00',
+                                                                                   '2019-06-14 13:56:00')
 
 print 'Training set length is: ', len(train_X.index)
 print 'Test set length is: ', len(test_X.index)
@@ -56,10 +56,9 @@ print 'Test set length is: ', len(test_X.index)
 
 # Select subsets of the features that we will consider:
 
-basic_features = ['gFx', 'gFy', 'gFz', 'ax', 'ay', 'az', 'wx', 'wy', 'wz', 'p', 'Bx', 'By', 'Bz',
-                         'Pitch', 'Roll', 'Gain']
-pca_features = ['pca_1','pca_2','pca_3','pca_4','pca_5','pca_6','pca_7']
-time_features = [name for name in dataset.columns if ('temp_' in name and not 'Azimuth' in name)]
+basic_features = ['acc_x', 'acc_y', 'acc_z', 'eda', 'temp', 'bvp']
+pca_features = ['pca_1','pca_2','pca_3','pca_4','pca_5']
+time_features = [name for name in dataset.columns if ('temp_' in name and not 'hr' in name)]
 freq_features = [name for name in dataset.columns if (('_freq' in name) or ('_pse' in name))]
 print '#basic features: ', len(basic_features)
 print '#PCA features: ', len(pca_features)
