@@ -100,8 +100,107 @@ eval = RegressionEvaluation()
 repeats = 5
 
 scores_over_all_algs = []
+#
+# for i in range(0, len(possible_feature_sets)):
+#
+#     selected_train_X = train_X[possible_feature_sets[i]]
+#     selected_test_X = test_X[possible_feature_sets[i]]
+#
+#     # First we run our non deterministic classifiers a number of times to average their score.
+#
+#     performance_tr_nn = 0
+#     performance_tr_nn_std = 0
+#     performance_tr_rf = 0
+#     performance_tr_rf_std = 0
+#     performance_tr_svm = 0
+#     performance_tr_svm_std = 0
+#     performance_te_nn = 0
+#     performance_te_nn_std = 0
+#     performance_te_rf = 0
+#     performance_te_rf_std = 0
+#     performance_te_svm = 0
+#     performance_te_svm_std = 0
+#
+#     for repeat in range(0, repeats):
+#         regr_train_y, regr_test_y = learner.feedforward_neural_network(selected_train_X, train_y, selected_test_X,
+#                                                                        gridsearch=True)
+#
+#         mean_tr, std_tr = eval.mean_squared_error_with_std(train_y, regr_train_y)
+#         mean_te, std_te = eval.mean_squared_error_with_std(test_y, regr_test_y)
+#         mean_training = eval.mean_squared_error(train_y, regr_train_y)
+#         performance_tr_nn += mean_tr
+#         performance_tr_nn_std += std_tr
+#         performance_te_nn += mean_te
+#         performance_te_nn_std += std_te
+#
+#         regr_train_y, regr_test_y = learner.random_forest(selected_train_X, train_y, selected_test_X, gridsearch=True)
+#         mean_tr, std_tr = eval.mean_squared_error_with_std(train_y, regr_train_y)
+#         mean_te, std_te = eval.mean_squared_error_with_std(test_y, regr_test_y)
+#         performance_tr_rf += mean_tr
+#         performance_tr_rf_std += std_tr
+#         performance_te_rf += mean_te
+#         performance_te_rf_std += std_te
+#
+#     overall_performance_tr_nn = performance_tr_nn / repeats
+#     overall_performance_tr_nn_std = performance_tr_nn_std / repeats
+#     overall_performance_te_nn = performance_te_nn / repeats
+#     overall_performance_te_nn_std = performance_te_nn_std / repeats
+#     overall_performance_tr_rf = performance_tr_rf / repeats
+#     overall_performance_tr_rf_std = performance_tr_rf_std / repeats
+#     overall_performance_te_rf = performance_te_rf / repeats
+#     overall_performance_te_rf_std = performance_te_rf_std / repeats
+#
+#     # And we run our deterministic algorithms:
+#
+#     regr_train_y, regr_test_y = learner.support_vector_regression_without_kernel(selected_train_X, train_y,
+#                                                                                  selected_test_X, gridsearch=True)
+#     mean_tr, std_tr = eval.mean_squared_error_with_std(train_y, regr_train_y)
+#     mean_te, std_te = eval.mean_squared_error_with_std(test_y, regr_test_y)
+#     performance_tr_svm = mean_tr
+#     performance_tr_svm_std = std_tr
+#     performance_te_svm = mean_te
+#     performance_te_svm_std = std_te
+#
+#     regr_train_y, regr_test_y = learner.k_nearest_neighbor(selected_train_X, train_y, selected_test_X, gridsearch=True)
+#     mean_tr, std_tr = eval.mean_squared_error_with_std(train_y, regr_train_y)
+#     mean_te, std_te = eval.mean_squared_error_with_std(test_y, regr_test_y)
+#     performance_tr_knn = mean_tr
+#     performance_tr_knn_std = std_tr
+#     performance_te_knn = mean_te
+#     performance_te_knn_std = std_te
+#
+#     regr_train_y, regr_test_y = learner.decision_tree(selected_train_X, train_y, selected_test_X, gridsearch=True,
+#                                                       export_tree_path=export_tree_path)
+#
+#     mean_tr, std_tr = eval.mean_squared_error_with_std(train_y, regr_train_y)
+#     mean_te, std_te = eval.mean_squared_error_with_std(test_y, regr_test_y)
+#     performance_tr_dt = mean_tr
+#     performance_tr_dt_std = std_tr
+#     performance_te_dt = mean_te
+#     performance_te_dt_std = std_te
+#
+#     scores_with_sd = [(overall_performance_tr_nn, overall_performance_tr_nn_std, overall_performance_te_nn,
+#                        overall_performance_te_nn_std),
+#                       (overall_performance_tr_rf, overall_performance_tr_rf_std, overall_performance_te_rf,
+#                        overall_performance_te_rf_std),
+#                       (performance_tr_svm, performance_tr_svm_std, performance_te_svm, performance_te_svm_std),
+#                       (performance_tr_knn, performance_tr_knn_std, performance_te_knn, performance_te_knn_std),
+#                       (performance_tr_dt, performance_tr_dt_std, performance_te_dt, performance_te_dt_std)]
+#     util.print_table_row_performances_regression(feature_names[i], len(selected_train_X.index),
+#                                                  len(selected_test_X.index), scores_with_sd)
+#     scores_over_all_algs.append(scores_with_sd)
+#
+# print scores_over_all_algs
+# DataViz.plot_performances_regression(['NN', 'RF', 'SVM', 'KNN', 'DT'], feature_names, scores_over_all_algs)
+#
+# regr_train_y, regr_test_y = learner.random_forest(train_X[features_after_chapter_5], train_y,
+#                                                   test_X[features_after_chapter_5], gridsearch=True,
+#                                                   print_model_details=True)
+# DataViz.plot_numerical_prediction_versus_real(train_X.index, train_y, regr_train_y, test_X.index, test_y, regr_test_y,
+#                                               'heart rate')
 
-for i in range(0, len(possible_feature_sets)):
+regr_train_y, regr_test_y = learner.support_vector_regression_without_kernel(train_X[features_after_chapter_5], train_y, test_X[features_after_chapter_5],
+                                                                       gridsearch=True, print_model_details=True)
 
     selected_train_X = train_X[possible_feature_sets[i]]
     selected_test_X = test_X[possible_feature_sets[i]]

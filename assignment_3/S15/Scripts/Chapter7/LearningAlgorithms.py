@@ -284,7 +284,7 @@ class RegressionAlgorithms:
         nn.fit(train_X, train_y)
 
         if gridsearch and print_model_details:
-            print rf.best_params_
+            print nn.best_params_
 
         if gridsearch:
             nn = nn.best_estimator_
