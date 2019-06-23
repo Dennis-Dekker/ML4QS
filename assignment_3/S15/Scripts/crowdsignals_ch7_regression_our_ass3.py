@@ -62,7 +62,7 @@ print 'Test set length is: ', len(test_X.index)
 basic_features = ['acc_x', 'acc_y', 'acc_z', 'eda', 'temp', 'bvp']
 pca_features = ['pca_1', 'pca_2', 'pca_3', 'pca_4', 'pca_5']
 time_features = [name for name in dataset.columns if ('temp_' in name and not 'hr' in name)]
-freq_features = [name for name in dataset.columns if (('_freq' in name) or ('_pse' in name))]
+freq_features = [name for name in dataset.columns if ((('_freq' in name) or ('_pse' in name)) and not ('hr' in name))]
 print '#basic features: ', len(basic_features)
 print '#PCA features: ', len(pca_features)
 print '#time features: ', len(time_features)
